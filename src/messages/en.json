@@ -1,0 +1,316 @@
+{
+  "meta": {
+    "title": "LOYA GAME — Turn diners into players. Players into regulars.",
+    "description": "Branded skill-games that pull customers off aggregators and onto your own menu — with rewards you control. A direct conversion system for restaurants.",
+    "keywords": "restaurant gamification, loyalty games, restaurant marketing Egypt, direct ordering, customer retention, branded games"
+  },
+  "nav": {
+    "problem": "The Problem",
+    "how": "How it works",
+    "games": "The Games",
+    "rewards": "Rewards",
+    "dashboard": "Dashboard",
+    "pricing": "Pricing",
+    "bookDemo": "Book a demo",
+    "menuLabel": "Open menu",
+    "closeLabel": "Close menu",
+    "langLabel": "Language"
+  },
+  "hero": {
+    "badge": "A direct conversion system for restaurants",
+    "titleLine1": "Turn diners into players.",
+    "titleLine2": "Players into regulars.",
+    "subhead": "Branded skill-games that pull customers off aggregators and onto your own menu — with rewards you control.",
+    "ctaPrimary": "Book a demo",
+    "ctaSecondary": "See how it works",
+    "wheel": {
+      "label": "Spin to win — try it",
+      "spin": "SPIN",
+      "spinning": "Spinning…",
+      "again": "Spin again",
+      "youWon": "You won",
+      "srInstructions": "Interactive prize wheel demo. Press Enter or Space to spin and land on a reward.",
+      "liveWin": "The wheel landed on {prize}",
+      "footnote": "This is the exact reward moment your customers feel — every time.",
+      "prizes": {
+        "freeDessert": "Free dessert",
+        "off15": "15% off",
+        "freeDrink": "Free drink",
+        "off25": "25% off",
+        "buy1get1": "Buy 1 Get 1",
+        "freeFries": "Free fries",
+        "off10": "10% off",
+        "vipPoints": "2× points"
+      }
+    },
+    "stats": {
+      "marginLost": "margin lost to aggregators",
+      "ownData": "of the customer data is yours",
+      "liveIn": "to go live"
+    },
+    "statValues": {
+      "margin": "25–30%",
+      "data": "100%",
+      "live": "1 day"
+    }
+  },
+  "problem": {
+    "eyebrow": "The problem",
+    "title": "You cook the food. The aggregator keeps the customer.",
+    "subtitle": "Every order through a delivery app costs you margin and hands over the one thing you can't buy back — the relationship with your customer.",
+    "cards": {
+      "tax": {
+        "title": "The aggregator tax",
+        "body": "25–30% of every order vanishes in commissions. On thin restaurant margins, that's often the difference between profit and loss.",
+        "stat": "−25–30%",
+        "statLabel": "per order in commission"
+      },
+      "data": {
+        "title": "You're flying blind",
+        "body": "The app owns the customer's name, number, and habits. You never learn who ordered, what they love, or how to bring them back.",
+        "stat": "0",
+        "statLabel": "customer records you keep"
+      },
+      "social": {
+        "title": "Likes ≠ orders",
+        "body": "Social media buys you attention, not conversion. A viral reel doesn't fill tables or move your own menu.",
+        "stat": "≈2%",
+        "statLabel": "of followers ever order"
+      }
+    },
+    "kicker": "There's a way to flip it — make the fun happen on your turf, and keep every customer you earn."
+  },
+  "how": {
+    "eyebrow": "How it works",
+    "title": "Three steps. From bored scroll to repeat order.",
+    "subtitle": "A branded game lives on your own site. Customers play for a reward, then redeem it with you — never through a middleman.",
+    "steps": {
+      "play": {
+        "step": "01",
+        "title": "Customer plays",
+        "body": "They land on your branded skill-game — a quick, competitive round they actually want to replay. It lives on your menu, your domain, your brand."
+      },
+      "win": {
+        "step": "02",
+        "title": "Wins a reward you control",
+        "body": "You set the prizes and the odds: a discount, a free item, bonus points. Rewards are limited and rule-based, so promos never run away from you."
+      },
+      "order": {
+        "step": "03",
+        "title": "Orders on YOUR site",
+        "body": "They redeem in-store at the cashier or online with a single-use coupon code — on your channel. The margin and the data stay with you."
+      }
+    }
+  },
+  "games": {
+    "eyebrow": "The games",
+    "title": "Two games built to be replayed.",
+    "subtitle": "Skill-based, fast, and fully branded to your restaurant. Easy to learn, hard to put down — the replay is where retention comes from.",
+    "tag": "Fully branded to you",
+    "fruit": {
+      "name": "Fruit Slice",
+      "tagline": "Slice, combo, climb the board.",
+      "body": "A satisfying slice-and-combo game. Chain fruits for multipliers, chase the weekly high score, unlock the next reward tier.",
+      "features": ["Combo multipliers", "Weekly high scores", "One-more-round pacing"]
+    },
+    "fries": {
+      "name": "Catch the Fries",
+      "tagline": "Catch the good stuff. Dodge the rest.",
+      "body": "A reflex catcher themed around your menu. Catch fries and signature items, avoid the traps, bank points toward prizes.",
+      "features": ["Reflex scoring", "Menu-themed items", "Prize thresholds"]
+    },
+    "playLabel": "Preview",
+    "previewNote": "Illustrative preview — live games are custom-built and branded for your restaurant."
+  },
+  "rewards": {
+    "eyebrow": "Rewards & campaigns",
+    "title": "Everything you need to run the promo — and stay in control.",
+    "subtitle": "Leaderboards, codes, limited-time offers, and prize odds you dial in yourself. Marketing that behaves like a system, not a gamble.",
+    "leaderboard": {
+      "title": "Weekly & monthly leaderboards",
+      "body": "Competition brings players back on schedule. Reset weekly or monthly and reward your top regulars.",
+      "toggleWeekly": "Weekly",
+      "toggleMonthly": "Monthly",
+      "colRank": "Rank",
+      "colPlayer": "Player",
+      "colScore": "Score",
+      "players": ["Nour A.", "Omar K.", "Salma H.", "Youssef M.", "Mariam T."]
+    },
+    "coupon": {
+      "title": "Single-use coupon codes",
+      "body": "Every win generates a unique, single-use code — redeem in-store or online. No screenshots, no double-dipping.",
+      "generate": "Generate code",
+      "generating": "Generating…",
+      "copied": "Copied",
+      "hint": "Tap to generate a sample code"
+    },
+    "features": {
+      "lto": {
+        "title": "Limited-time offers",
+        "body": "Launch a weekend or holiday campaign in minutes. Set a start, an end, and let scarcity do the work."
+      },
+      "odds": {
+        "title": "Controlled prize odds",
+        "body": "Decide exactly how often each reward appears. Protect your margin while the game still feels generous."
+      },
+      "targeting": {
+        "title": "Campaigns on demand",
+        "body": "Spin up themed campaigns — new-item launches, slow-day boosts, win-back offers — whenever you need them."
+      }
+    }
+  },
+  "dashboard": {
+    "eyebrow": "Analytics dashboard",
+    "title": "See exactly what the game is doing for the business.",
+    "subtitle": "Plays, redemptions, returning customers, and campaign performance — in one live view. The customer data the aggregators kept from you, finally yours.",
+    "tag": "Sub-product",
+    "live": "Live",
+    "kpis": {
+      "plays": "Plays this week",
+      "redemptions": "Redemptions",
+      "returning": "Returning customers",
+      "revenue": "Attributed revenue"
+    },
+    "kpiValues": {
+      "plays": "12,480",
+      "redemptions": "1,932",
+      "returning": "38%",
+      "revenue": "EGP 214K"
+    },
+    "kpiDeltas": {
+      "plays": "+18%",
+      "redemptions": "+11%",
+      "returning": "+6 pts",
+      "revenue": "+22%"
+    },
+    "chartTitle": "Plays vs. redemptions",
+    "chartLegendPlays": "Plays",
+    "chartLegendRedemptions": "Redemptions",
+    "campaignsTitle": "Top campaigns",
+    "campaigns": [
+      { "name": "Weekend Double Points", "metric": "634 redemptions" },
+      { "name": "New Burger Launch", "metric": "512 redemptions" },
+      { "name": "Slow-Tuesday Boost", "metric": "301 redemptions" }
+    ],
+    "days": ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri"],
+    "note": "Sample data shown for illustration."
+  },
+  "training": {
+    "eyebrow": "Staff training & rollout",
+    "title": "Live in a day. Your team trained.",
+    "subtitle": "We handle setup and train your staff to redeem codes at the counter, so launch day runs smoothly and nobody at the register is guessing.",
+    "steps": {
+      "setup": {
+        "title": "We set it up",
+        "body": "Your branded game and campaigns are configured and connected to your menu — no dev work on your side."
+      },
+      "train": {
+        "title": "We train your team",
+        "body": "A short, practical session on scanning and redeeming codes at the register — plus a one-page cheat sheet."
+      },
+      "launch": {
+        "title": "You launch",
+        "body": "Go live the same day with a launch campaign ready to drive the first wave of plays."
+      }
+    },
+    "badge": "Average go-live: 1 day"
+  },
+  "proof": {
+    "eyebrow": "Social proof",
+    "title": "Built for restaurants that want their customers back.",
+    "quote": "Within the first month, we watched regulars come back for the leaderboard, not just the food. For the first time, the customer data is ours.",
+    "author": "Owner name",
+    "role": "Owner, Restaurant name",
+    "placeholderNote": "Placeholder — replace with a real customer quote.",
+    "logosTitle": "Trusted by forward-thinking restaurants",
+    "logoPlaceholder": "Logo",
+    "logoNote": "Logo placeholders — swap in real partner brands."
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "Simple subscriptions. Priced for restaurants.",
+    "subtitle": "Monthly plans in EGP. All numbers below are placeholders — swap in your real pricing.",
+    "perMonth": "/ month",
+    "placeholderBadge": "PLACEHOLDER",
+    "popular": "Most popular",
+    "cta": "Book a demo",
+    "tiers": {
+      "starter": {
+        "name": "Starter",
+        "price": "EGP X,XXX",
+        "tagline": "For a single location testing the waters.",
+        "features": ["1 branded game", "1 active campaign", "Single-use coupon codes", "Basic analytics", "Email support"]
+      },
+      "growth": {
+        "name": "Growth",
+        "price": "EGP X,XXX",
+        "tagline": "For growing restaurants that want the full loop.",
+        "features": ["Both game types", "Unlimited campaigns", "Weekly & monthly leaderboards", "Full analytics dashboard", "Staff training & onboarding", "Priority support"]
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "EGP XX,XXX",
+        "tagline": "For multi-branch brands and franchises.",
+        "features": ["Everything in Growth", "Multi-branch management", "Custom-branded games", "Advanced campaign targeting", "API & POS integrations", "Dedicated account manager"]
+      }
+    }
+  },
+  "demo": {
+    "eyebrow": "Book a demo",
+    "title": "See it working on your own menu.",
+    "subtitle": "Tell us about your restaurant and we'll show you a live game, set up in minutes.",
+    "points": ["A live game branded to you", "Your rewards and odds, configured", "Live in a day — we handle setup"],
+    "form": {
+      "name": "Your name",
+      "namePlaceholder": "e.g. Omar Hassan",
+      "restaurant": "Restaurant name",
+      "restaurantPlaceholder": "e.g. Cairo Grill",
+      "contact": "Phone or email",
+      "contactPlaceholder": "e.g. 010… or you@restaurant.com",
+      "submit": "Request my demo",
+      "submitting": "Sending…",
+      "successTitle": "Request received!",
+      "successBody": "Thanks — we'll reach out shortly to schedule your demo.",
+      "another": "Send another",
+      "required": "Please fill in this field.",
+      "disclaimer": "No commitment. We'll never sell your data — it's yours."
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Questions, answered.",
+    "items": [
+      { "q": "Do I need my own website?", "a": "No. The game can live on a page we host for you, or embed into your existing site or ordering menu. Either way, the customer and the data stay with you." },
+      { "q": "How does redemption work?", "a": "Two ways: in-store, where your staff redeems a single-use code at the cashier; and online, where the customer applies the code at checkout on your own ordering channel." },
+      { "q": "Can I control what customers win?", "a": "Completely. You set the prize list and the exact odds for each reward, plus start and end dates for campaigns — so promos never exceed your margin." },
+      { "q": "How long until we're live?", "a": "Typically one day. We configure your game and campaigns, connect them to your menu, and train your staff to redeem codes — then you launch." },
+      { "q": "Is it hard for my staff to use?", "a": "No. Redeeming a code takes seconds at the register. We train your team and leave a simple one-page guide." },
+      { "q": "What does it cost?", "a": "It's a monthly subscription in EGP with tiers for single locations up to multi-branch brands. See the pricing section — book a demo for exact numbers for your setup." }
+    ]
+  },
+  "footer": {
+    "tagline": "Turn diners into players. Players into regulars.",
+    "cols": {
+      "product": "Product",
+      "company": "Company",
+      "legal": "Legal"
+    },
+    "links": {
+      "how": "How it works",
+      "games": "The Games",
+      "rewards": "Rewards",
+      "dashboard": "Dashboard",
+      "pricing": "Pricing",
+      "about": "About",
+      "contact": "Contact",
+      "careers": "Careers",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    },
+    "contactTitle": "Get in touch",
+    "email": "hello@loyagame.com",
+    "region": "Cairo, Egypt · Serving MENA",
+    "rights": "All rights reserved.",
+    "socialNote": "Social links — placeholder"
+  }
+}

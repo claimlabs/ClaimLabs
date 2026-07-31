@@ -1,0 +1,129 @@
+@import '../styles/tokens.css';
+@import '../styles/fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.02;
+  }
+
+  ::selection {
+    background: var(--color-primary);
+    color: var(--color-primary-ink);
+  }
+
+  /* Accessible focus ring, brand-colored */
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer utilities {
+  /* Fluid display scale */
+  .text-display {
+    font-size: clamp(2.75rem, 7vw, 5.75rem);
+    line-height: 0.98;
+  }
+  .text-h2 {
+    font-size: clamp(2rem, 4.5vw, 3.25rem);
+    line-height: 1.05;
+  }
+
+  .container-x {
+    width: 100%;
+    max-width: var(--max-content);
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 5vw, 2.5rem);
+  }
+
+  /* Section vertical rhythm */
+  .section-y {
+    padding-block: var(--space-section);
+  }
+
+  /* Lime text glow for accents */
+  .glow-primary {
+    text-shadow: 0 0 24px rgba(var(--primary-rgb), 0.5);
+  }
+
+  /* Arcade grid backdrop (used in hero) */
+  .bg-arcade-grid {
+    background-image:
+      linear-gradient(rgba(var(--primary-rgb), 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(var(--primary-rgb), 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .gradient-fade-b {
+    -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+  }
+
+  /* Glassmorphism card — dark-mode glass panel */
+  .glass-card {
+    background: var(--color-glass);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--color-glass-border);
+    box-shadow: var(--shadow-glass);
+  }
+
+  /* Gradient border ring — wraps a child with a 1px gradient border */
+  .gradient-ring {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    padding: 1px;
+    border-radius: var(--radius-xl);
+  }
+
+  /* Hover card — smooth lift + border highlight */
+  .hover-lift {
+    transition: transform 220ms var(--ease-out), box-shadow 220ms var(--ease-out), border-color 220ms ease;
+  }
+  .hover-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lift);
+  }
+
+  /* Subtle radial highlight — use for section CTAs */
+  .radial-hero {
+    background: radial-gradient(ellipse 70% 50% at 60% 0%, rgba(var(--primary-rgb), 0.12) 0%, transparent 70%);
+  }
+}
+
+/* Respect reduced motion globally */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

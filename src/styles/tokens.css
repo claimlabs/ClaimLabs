@@ -1,0 +1,89 @@
+/*
+ * ============================================================
+ *  LOYA GAME — BRAND TOKENS (single source of truth)
+ *  Re-skin the entire site by editing THIS file only.
+ *  Components reference these via Tailwind theme tokens.
+ *
+ *  Palette reference: ekbarfirm.online
+ *  Dark near-black canvas · white ink · silver/platinum primary
+ * ============================================================
+ */
+
+:root {
+  /* ---- Color: canvas & surfaces ---- */
+  --color-canvas: #080808;    /* pure near-black */
+  --color-surface: #0d1117;   /* dark card surface */
+  --color-surface-2: #161c27; /* slightly lighter panel */
+
+  /* ---- Color: text ---- */
+  --color-ink: #ffffff;        /* crisp white */
+  --color-ink-muted: #7a8899;  /* steel blue-grey */
+
+  /* ---- Color: brand ---- */
+  --color-primary: #2b7fff;      /* electric blue */
+  --color-primary-ink: #ffffff;  /* white on blue */
+  --color-accent: #ffdf20;       /* yellow */
+  --color-success: #00c950;      /* green */
+  --color-danger: #ea384c;       /* red */
+
+  /* raw channels for alpha compositing (glows, tints) */
+  --primary-rgb: 43 127 255;
+  --accent-rgb: 255 223 32;
+  --danger-rgb: 234 56 76;
+  --success-rgb: 0 201 80;
+
+  /* ---- Borders ---- */
+  --color-border: rgba(43, 127, 255, 0.18);
+
+  /* ---- Glass surfaces (dark blue-tinted glass) ---- */
+  --color-glass: rgba(13, 17, 23, 0.85);
+  --color-glass-border: rgba(43, 127, 255, 0.22);
+  --color-glass-border-subtle: rgba(43, 127, 255, 0.08);
+
+  /* ---- Radii ---- */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  /* ---- Shadows / glows ---- */
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4),
+    0 8px 24px -8px rgba(0, 0, 0, 0.6);
+  --shadow-lift: 0 4px 8px rgba(0, 0, 0, 0.5),
+    0 24px 60px -20px rgba(0, 0, 0, 0.7);
+  --shadow-glass: 0 36px 100px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  --shadow-glow: 0 0 0 1px rgba(var(--primary-rgb), 0.4),
+    0 0 32px -4px rgba(var(--primary-rgb), 0.3);
+  --shadow-glow-lg: 0 0 0 1px rgba(var(--primary-rgb), 0.25),
+    0 8px 40px -8px rgba(var(--primary-rgb), 0.22);
+
+  /* ---- Spacing / layout ---- */
+  --space-section: clamp(4.5rem, 10vw, 8rem);
+  --max-content: 1200px;
+
+  /* ---- Motion ---- */
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 160ms;
+  --dur-base: 280ms;
+  --dur-slow: 520ms;
+
+  /* ---- Typography ----
+   * --font-clash is provided by next/font/local on <html>.
+   * Inter + Plex Arabic are self-hosted @font-face (see fonts.css). */
+  --font-inter: 'Inter';
+  --font-arabic-plex: 'IBM Plex Sans Arabic';
+  --font-display: var(--font-clash), 'Clash Display', system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+  --font-arabic: var(--font-arabic-plex), system-ui, sans-serif;
+}
+
+/* Arabic locale swaps body + display to the Arabic face for a coherent RTL feel */
+:root[lang='ar'] {
+  --font-display: var(--font-arabic-plex), 'IBM Plex Sans Arabic', system-ui,
+    sans-serif;
+  --font-body: var(--font-arabic-plex), 'IBM Plex Sans Arabic', system-ui,
+    sans-serif;
+}
