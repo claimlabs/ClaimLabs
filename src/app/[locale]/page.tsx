@@ -9,7 +9,6 @@ import { Rewards } from '@/components/sections/Rewards';
 import { Dashboard } from '@/components/sections/Dashboard';
 import { Training } from '@/components/sections/Training';
 import { SocialProof } from '@/components/sections/SocialProof';
-import { Pricing } from '@/components/sections/Pricing';
 import { DemoCTA } from '@/components/sections/DemoCTA';
 import { FAQ } from '@/components/sections/FAQ';
 import { Footer } from '@/components/Footer';
@@ -34,7 +33,6 @@ export default function HomePage({
         <Dashboard />
         <Training />
         <SocialProof />
-        <Pricing />
         <DemoCTA />
         <FAQ />
       </main>

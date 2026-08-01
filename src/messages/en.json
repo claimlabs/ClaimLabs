@@ -10,14 +10,12 @@
     "games": "The Games",
     "rewards": "Rewards",
     "dashboard": "Dashboard",
-    "pricing": "Pricing",
     "bookDemo": "Book a demo",
     "menuLabel": "Open menu",
     "closeLabel": "Close menu",
     "langLabel": "Language"
   },
   "hero": {
-    "badge": "A direct conversion system for restaurants",
     "titleLine1": "Turn diners into players.",
     "titleLine2": "Players into regulars.",
     "subhead": "Branded skill-games that pull customers off aggregators and onto your own menu — with rewards you control.",
@@ -223,8 +221,7 @@
     "role": "Owner, Restaurant name",
     "placeholderNote": "Placeholder — replace with a real customer quote.",
     "logosTitle": "Trusted by forward-thinking restaurants",
-    "logoPlaceholder": "Logo",
-    "logoNote": "Logo placeholders — swap in real partner brands."
+    "logoPlaceholder": "Logo"
   },
   "pricing": {
     "eyebrow": "Pricing",
@@ -300,7 +297,6 @@
       "games": "The Games",
       "rewards": "Rewards",
       "dashboard": "Dashboard",
-      "pricing": "Pricing",
       "about": "About",
       "contact": "Contact",
       "careers": "Careers",

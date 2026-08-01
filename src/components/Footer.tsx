@@ -16,7 +16,6 @@ export function Footer() {
         { label: t('links.games'), href: '#games' },
         { label: t('links.rewards'), href: '#rewards' },
         { label: t('links.dashboard'), href: '#dashboard' },
-        { label: t('links.pricing'), href: '#pricing' },
       ],
     },
     {

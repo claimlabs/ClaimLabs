@@ -2,9 +2,10 @@
 
 import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion } from 'framer-motion';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { PrizeWheel } from './PrizeWheel';
+import { TrustedLogos } from '../sections/TrustedLogos';
 
 export function Hero() {
   const t = useTranslations('hero');
@@ -34,19 +35,9 @@ export function Hero() {
       <div className="container-x relative grid items-center gap-12 pb-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:pb-28">
         {/* Copy column */}
         <div className="text-center lg:text-start">
-          <motion.span
-            initial={reduced ? false : { opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/[0.10] px-4 py-1.5 text-sm font-medium text-primary shadow-[0_0_20px_rgba(var(--primary-rgb),0.3)]"
-          >
-            <Sparkles className="h-4 w-4" aria-hidden="true" />
-            {t('badge')}
-          </motion.span>
-
           <h1
             id="hero-title"
-            className="text-display mt-6 font-bold tracking-tight"
+            className="text-display font-bold tracking-tight"
           >
             <motion.span
               className="block"
@@ -117,6 +108,9 @@ export function Hero() {
             ))}
           </motion.dl>
         </div>
+
+        {/* Trusted logos — mobile only (between copy & wheel) */}
+        <TrustedLogos className="block lg:hidden" />
 
         {/* Wheel column */}
         <motion.div

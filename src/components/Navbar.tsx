@@ -15,7 +15,6 @@ const SECTIONS = [
   { id: 'games', key: 'games' },
   { id: 'rewards', key: 'rewards' },
   { id: 'dashboard', key: 'dashboard' },
-  { id: 'pricing', key: 'pricing' },
 ] as const;
 
 export function Navbar() {
