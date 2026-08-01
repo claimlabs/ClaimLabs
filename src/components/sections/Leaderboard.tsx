@@ -34,7 +34,7 @@ export function Leaderboard() {
           {t('title')}
         </h3>
         <div
-          className="inline-flex rounded-full border border-border bg-canvas p-0.5 text-xs"
+          className="inline-flex rounded-full border border-border bg-canvas p-0.5 text-xs min-h-[44px] items-center"
           role="group"
           aria-label={t('title')}
         >
@@ -44,7 +44,7 @@ export function Leaderboard() {
               onClick={() => setPeriod(p)}
               aria-pressed={period === p}
               className={cn(
-                'rounded-full px-3 py-1.5 font-medium transition-colors',
+                'min-h-[2.75rem] rounded-full px-3 py-2 font-medium transition-colors',
                 period === p
                   ? 'bg-primary text-primary-ink'
                   : 'text-ink-muted hover:text-ink',

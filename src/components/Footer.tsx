@@ -39,7 +39,7 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-canvas">
       <div className="container-x py-14">
-        <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           {/* Brand */}
           <div>
             <Logo />
@@ -51,7 +51,7 @@ export function Footer() {
                 <a
                   key={i}
                   href="#"
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border text-ink-muted transition-colors hover:border-primary/50 hover:text-primary"
+                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border text-ink-muted transition-colors hover:border-primary/50 hover:text-primary"
                   aria-label="Social link (placeholder)"
                 >
                   <Icon className="h-4 w-4" aria-hidden="true" />

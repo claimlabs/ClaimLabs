@@ -30,7 +30,7 @@ export function DemoCTA() {
   return (
     <Section id="demo" ariaLabelledby="demo-title">
       <div className="container-x">
-        <div className="grid items-center gap-10 rounded-2xl border border-border bg-gradient-to-br from-surface via-surface to-canvas p-8 md:p-12 lg:grid-cols-2">
+        <div className="grid items-center gap-10 rounded-2xl border border-border bg-gradient-to-br from-surface via-surface to-canvas p-5 sm:p-8 md:p-12 lg:grid-cols-2">
           {/* Left: pitch */}
           <div>
             <Reveal>
@@ -62,7 +62,7 @@ export function DemoCTA() {
 
           {/* Right: form */}
           <Reveal delay={0.1}>
-            <div className="rounded-xl border border-border bg-surface p-6 md:p-8">
+            <div className="rounded-xl border border-border bg-surface p-4 sm:p-6 md:p-8">
               <AnimatePresence mode="wait">
                 {done ? (
                   <motion.div

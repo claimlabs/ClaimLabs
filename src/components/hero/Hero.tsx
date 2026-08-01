@@ -19,7 +19,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden pt-28 md:pt-36"
+      className="relative overflow-hidden pt-24 sm:pt-28 md:pt-36"
       aria-labelledby="hero-title"
     >
       {/* Arcade grid + glow backdrop */}
@@ -95,17 +95,17 @@ export function Hero() {
             initial={reduced ? false : { opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="mx-auto mt-12 grid max-w-lg grid-cols-3 gap-0 overflow-hidden rounded-2xl glass-card lg:mx-0"
+            className="mx-auto mt-12 grid max-w-lg grid-cols-3 gap-0 overflow-hidden rounded-2xl glass-card lg:mx-0 w-full"
           >
             {stats.map((s, i) => (
-              <div key={s.label} className={`px-5 py-5 text-center lg:text-start ${i > 0 ? 'border-s border-border' : ''}`}>
+              <div key={s.label} className={`px-3 py-4 text-center sm:px-5 sm:py-5 lg:text-start ${i > 0 ? 'border-s border-border' : ''}`}>
                 <dt
                   className={
                     s.tone === 'danger'
-                      ? 'font-display text-2xl font-bold text-danger sm:text-3xl'
+                      ? 'font-display text-xl font-bold text-danger sm:text-2xl md:text-3xl'
                       : s.tone === 'primary'
-                        ? 'font-display text-2xl font-bold text-primary sm:text-3xl'
-                        : 'font-display text-2xl font-bold text-ink sm:text-3xl'
+                        ? 'font-display text-xl font-bold text-primary sm:text-2xl md:text-3xl'
+                        : 'font-display text-xl font-bold text-ink sm:text-2xl md:text-3xl'
                   }
                 >
                   {s.value}
@@ -123,7 +123,7 @@ export function Hero() {
           initial={reduced ? false : { opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-col items-center"
+          className="flex w-full flex-col items-center"
         >
           <PrizeWheel />
           <p className="mt-2 max-w-xs text-center text-xs text-ink-muted/80">

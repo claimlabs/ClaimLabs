@@ -55,7 +55,7 @@ export function CouponGenerator() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.25 }}
-              className="font-display text-xl font-bold tracking-wider text-primary glow-primary sm:text-2xl"
+              className="break-all font-display text-base font-bold tracking-wider text-primary glow-primary sm:text-xl md:text-2xl"
             >
               {code}
             </motion.span>

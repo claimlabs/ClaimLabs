@@ -64,7 +64,7 @@ export function Dashboard() {
               </span>
             </div>
 
-            <div className="grid gap-5 p-5 lg:grid-cols-[1.5fr_1fr]">
+            <div className="grid gap-5 p-3 sm:p-5 lg:grid-cols-[1.5fr_1fr]">
               {/* Left: KPIs + chart */}
               <div>
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">

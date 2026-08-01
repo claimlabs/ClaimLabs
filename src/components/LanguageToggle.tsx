@@ -23,7 +23,7 @@ export function LanguageToggle({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        'inline-flex items-center rounded-full border border-border bg-surface/60 p-0.5 text-sm',
+        'inline-flex min-h-[2.75rem] items-center rounded-full border border-border bg-surface/60 p-0.5 text-sm',
         isPending && 'opacity-60',
         className,
       )}
@@ -41,7 +41,7 @@ export function LanguageToggle({ className }: { className?: string }) {
           onClick={() => switchTo(lng)}
           aria-pressed={locale === lng}
           className={cn(
-            'rounded-full px-2.5 py-1 font-medium transition-colors duration-200',
+            'min-h-[2.75rem] rounded-full px-2.5 py-1 font-medium transition-colors duration-200',
             locale === lng
               ? 'bg-primary text-primary-ink'
               : 'text-ink-muted hover:text-ink',
