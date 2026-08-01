@@ -117,7 +117,7 @@ export function PrizeWheel() {
         {/* Pointer */}
         <div className="absolute left-1/2 top-1 z-20 -translate-x-1/2">
           <div
-            className="h-0 w-0 border-x-[13px] border-t-[22px] border-x-transparent border-t-primary drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]"
+            className="h-0 w-0 border-x-[13px] border-t-[22px] border-x-transparent border-t-accent drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]"
             aria-hidden="true"
           />
         </div>
@@ -140,15 +140,15 @@ export function PrizeWheel() {
             cy={CY}
             r={R + 6}
             fill="var(--color-surface)"
-            stroke="var(--color-border)"
+            stroke="rgba(125, 211, 252, 0.25)"
             strokeWidth="2"
           />
           {PRIZES.map((prize, i) => {
             const isWinner = wonIndex === i;
             const fill = isWinner
-              ? 'var(--color-primary)'
+              ? 'var(--color-accent)'
               : i % 2 === 0
-                ? 'rgba(var(--primary-rgb), 0.14)'
+                ? 'rgba(125, 211, 252, 0.12)'
                 : 'var(--color-surface-2)';
             const mid = i * SEG + SEG / 2;
             const lp = pointAt(mid, R * 0.62);
@@ -164,7 +164,7 @@ export function PrizeWheel() {
                 <text
                   x={lp.x}
                   y={lp.y}
-                  fill={isWinner ? 'var(--color-primary-ink)' : 'var(--color-ink)'}
+                  fill={isWinner ? 'var(--color-canvas)' : 'var(--color-ink)'}
                   fontSize="12.5"
                   fontWeight={isWinner ? 700 : 500}
                   textAnchor="middle"
@@ -186,8 +186,8 @@ export function PrizeWheel() {
                 cx={p.x}
                 cy={p.y}
                 r="2.5"
-                fill="var(--color-primary)"
-                opacity="0.5"
+                fill="var(--color-accent)"
+                opacity="0.6"
               />
             );
           })}
@@ -199,8 +199,9 @@ export function PrizeWheel() {
           onKeyDown={onKey}
           disabled={spinning}
           aria-label={spinning ? t('spinning') : t('spin')}
+          style={{ boxShadow: '0 0 20px rgba(125, 211, 252, 0.5)' }}
           className={cn(
-            'absolute left-1/2 top-1/2 z-20 flex h-[24%] w-[24%] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border-4 border-canvas bg-primary text-primary-ink shadow-glow transition-transform duration-200',
+            'absolute left-1/2 top-1/2 z-20 flex h-[24%] w-[24%] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border-4 border-canvas bg-accent text-canvas transition-transform duration-200',
             !spinning && 'hover:scale-105 active:scale-95',
             spinning && 'cursor-wait',
           )}

@@ -33,7 +33,7 @@ function TierCard({
       )}
     >
       {popular && (
-        <span className="absolute -top-[1.125rem] start-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-primary to-accent px-4 py-1.5 text-xs font-bold text-white shadow-glow rtl:translate-x-1/2">
+        <span className="absolute -top-[1.125rem] start-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-accent to-primary px-4 py-1.5 text-xs font-bold text-canvas shadow-glow rtl:translate-x-1/2">
           {t('popular')}
         </span>
       )}

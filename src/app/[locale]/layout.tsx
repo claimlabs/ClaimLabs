@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing, type Locale } from '@/i18n/routing';
-import { clashDisplay } from '../fonts';
+import { sora } from '../fonts';
 import '../globals.css';
 
 export function generateStaticParams() {
@@ -66,7 +66,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir={dir}
-      className={clashDisplay.variable}
+      className={sora.variable}
       suppressHydrationWarning
     >
       <body>

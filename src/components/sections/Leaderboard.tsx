@@ -84,7 +84,7 @@ export function Leaderboard() {
                 className={cn(
                   'flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold',
                   i === 0
-                    ? 'bg-primary text-primary-ink'
+                    ? 'bg-accent text-canvas'
                     : 'bg-canvas text-ink-muted',
                 )}
               >

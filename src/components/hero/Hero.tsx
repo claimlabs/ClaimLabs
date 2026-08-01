@@ -24,10 +24,11 @@ export function Hero() {
     >
       {/* Arcade grid + glow backdrop */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">
-        <div className="absolute inset-0 bg-arcade-grid gradient-fade-b opacity-60" />
-        <div className="absolute -top-60 start-1/4 h-[640px] w-[640px] rounded-full bg-primary/25 blur-[160px]" />
-        <div className="absolute -top-20 end-0 h-[500px] w-[500px] rounded-full bg-accent/20 blur-[160px]" />
-        <div className="absolute bottom-0 start-0 h-[360px] w-[360px] rounded-full bg-primary/10 blur-[120px]" />
+        <div className="absolute inset-0 bg-arcade-grid animate-grid-pan gradient-fade-b opacity-70" />
+        <div className="absolute -top-60 start-1/4 h-[700px] w-[700px] rounded-full bg-primary/30 blur-[180px]" />
+        <div className="absolute -top-20 end-0 h-[560px] w-[560px] rounded-full bg-accent/25 blur-[180px]" />
+        <div className="absolute bottom-0 start-0 h-[400px] w-[400px] rounded-full bg-primary/15 blur-[120px]" />
+        <div className="absolute top-1/2 start-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/10 blur-[100px]" />
       </div>
 
       <div className="container-x relative grid items-center gap-12 pb-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:pb-28">
@@ -37,7 +38,7 @@ export function Hero() {
             initial={reduced ? false : { opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary"
+            className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/[0.10] px-4 py-1.5 text-sm font-medium text-primary shadow-[0_0_20px_rgba(var(--primary-rgb),0.3)]"
           >
             <Sparkles className="h-4 w-4" aria-hidden="true" />
             {t('badge')}
@@ -56,7 +57,7 @@ export function Hero() {
               {t('titleLine1')}
             </motion.span>
             <motion.span
-              className="block text-primary glow-primary"
+              className={`block text-accent ${reduced ? '' : 'animate-glitch'}`}
               initial={reduced ? false : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.15 }}
@@ -124,9 +125,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="flex flex-col items-center"
         >
-          <div className="relative rounded-full">
-            <PrizeWheel />
-          </div>
+          <PrizeWheel />
           <p className="mt-2 max-w-xs text-center text-xs text-ink-muted/80">
             {t('wheel.footnote')}
           </p>

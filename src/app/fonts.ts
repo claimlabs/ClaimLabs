@@ -1,18 +1,15 @@
 import localFont from 'next/font/local';
 
 /**
- * Display face — Clash Display, self-hosted from Fontshare woff2.
- * Body (Inter) and Arabic (IBM Plex Sans Arabic) are self-hosted via
- * plain @font-face in src/styles/fonts.css (no build-time network fetch),
- * and wired to --font-inter / --font-arabic-plex in tokens.css.
+ * Sora — variable font, self-hosted woff2 (latin + latin-ext subsets).
+ * Serves as both display and body face for EN.
+ * Arabic (IBM Plex Sans Arabic) remains in src/styles/fonts.css via @font-face.
  */
-export const clashDisplay = localFont({
+export const sora = localFont({
   src: [
-    { path: '../../public/fonts/ClashDisplay-Regular.woff2', weight: '400', style: 'normal' },
-    { path: '../../public/fonts/ClashDisplay-Medium.woff2', weight: '500', style: 'normal' },
-    { path: '../../public/fonts/ClashDisplay-Semibold.woff2', weight: '600', style: 'normal' },
-    { path: '../../public/fonts/ClashDisplay-Bold.woff2', weight: '700', style: 'normal' },
+    { path: '../../public/fonts/Sora-latin-ext.woff2', weight: '100 900', style: 'normal' },
+    { path: '../../public/fonts/Sora-latin.woff2',     weight: '100 900', style: 'normal' },
   ],
-  variable: '--font-clash',
+  variable: '--font-sora',
   display: 'swap',
 });

@@ -11,7 +11,7 @@ export function Logo({ className }: { className?: string }) {
         'inline-flex select-none items-center font-display text-xl font-bold tracking-tight text-ink',
         className,
       )}
-      aria-label="LOYA GAME"
+      aria-label="LOYA"
     >
       <span>L</span>
       <span
@@ -21,9 +21,6 @@ export function Logo({ className }: { className?: string }) {
         <span className="h-1.5 w-1.5 rounded-full bg-primary" />
       </span>
       <span>YA</span>
-      <span className="ms-1.5 rounded-md bg-primary px-1.5 py-0.5 text-[0.6em] font-bold uppercase tracking-widest text-primary-ink">
-        Game
-      </span>
     </span>
   );
 }

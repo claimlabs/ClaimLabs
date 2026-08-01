@@ -22,6 +22,14 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+    /* subtle CRT scanlines across entire site */
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent 0px,
+      transparent 3px,
+      rgba(0, 0, 0, 0.06) 3px,
+      rgba(0, 0, 0, 0.06) 4px
+    );
   }
 
   h1, h2, h3, h4 {
@@ -67,16 +75,27 @@
     padding-block: var(--space-section);
   }
 
-  /* Lime text glow for accents */
+  /* Primary text glow */
   .glow-primary {
-    text-shadow: 0 0 24px rgba(var(--primary-rgb), 0.5);
+    text-shadow:
+      0 0 16px rgba(var(--primary-rgb), 0.7),
+      0 0 48px rgba(var(--primary-rgb), 0.35);
+  }
+
+  /* Gradient text — primary → accent */
+  .gradient-text {
+    background: linear-gradient(100deg, var(--color-primary) 0%, var(--color-accent) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
   }
 
   /* Arcade grid backdrop (used in hero) */
   .bg-arcade-grid {
     background-image:
-      linear-gradient(rgba(var(--primary-rgb), 0.06) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(var(--primary-rgb), 0.06) 1px, transparent 1px);
+      linear-gradient(rgba(var(--primary-rgb), 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(var(--primary-rgb), 0.08) 1px, transparent 1px);
     background-size: 48px 48px;
   }
 
@@ -101,18 +120,76 @@
     border-radius: var(--radius-xl);
   }
 
-  /* Hover card — smooth lift + border highlight */
+  /* Hover card — lift + neon border glow */
   .hover-lift {
     transition: transform 220ms var(--ease-out), box-shadow 220ms var(--ease-out), border-color 220ms ease;
   }
   .hover-lift:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-lift);
+    transform: translateY(-4px);
+    box-shadow:
+      0 0 0 1px rgba(var(--primary-rgb), 0.5),
+      0 0 32px -4px rgba(var(--primary-rgb), 0.4),
+      var(--shadow-lift);
   }
 
   /* Subtle radial highlight — use for section CTAs */
   .radial-hero {
     background: radial-gradient(ellipse 70% 50% at 60% 0%, rgba(var(--primary-rgb), 0.12) 0%, transparent 70%);
+  }
+
+  /* CRT scanlines — fixed overlay on body */
+  .scanlines::after {
+    content: '';
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0px,
+      transparent 3px,
+      rgba(0, 0, 0, 0.08) 3px,
+      rgba(0, 0, 0, 0.08) 4px
+    );
+  }
+
+  /* Neon button shimmer sweep */
+  .btn-shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-shimmer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      105deg,
+      transparent 40%,
+      rgba(255, 255, 255, 0.22) 50%,
+      transparent 60%
+    );
+    transform: translateX(-100%);
+    transition: transform 0.45s var(--ease-out);
+  }
+  .btn-shimmer:hover::before {
+    transform: translateX(100%);
+  }
+
+  /* Eyebrow badge neon ping dot */
+  .eyebrow-dot {
+    position: relative;
+  }
+  .eyebrow-dot::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    background: rgba(var(--primary-rgb), 0.7);
+    animation: eyebrow-ping 2s ease-in-out infinite;
+  }
+  @keyframes eyebrow-ping {
+    0%, 100% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(2.2); opacity: 0; }
   }
 }
 

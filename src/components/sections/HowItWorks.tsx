@@ -35,7 +35,7 @@ export function HowItWorks() {
             <Reveal key={key} delay={i * 0.1}>
               <article className="relative h-full rounded-xl border border-border bg-surface p-8 transition-all duration-300 hover:border-primary/30 hover:-translate-y-1 hover:shadow-lift cursor-default">
                 <div className="flex items-center gap-4">
-                  <span className="relative z-10 inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-primary text-primary-ink shadow-glow">
+                  <span className="relative z-10 inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-accent text-canvas shadow-glow">
                     <Icon className="h-6 w-6" strokeWidth={2} aria-hidden="true" />
                   </span>
                   <span className="font-display text-4xl font-bold text-surface-2 [-webkit-text-stroke:1px_var(--color-border)]">

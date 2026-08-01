@@ -11,34 +11,34 @@
 
 :root {
   /* ---- Color: canvas & surfaces ---- */
-  --color-canvas: #080808;    /* pure near-black */
-  --color-surface: #0d1117;   /* dark card surface */
-  --color-surface-2: #161c27; /* slightly lighter panel */
+  --color-canvas: #0F172A;    /* dark navy */
+  --color-surface: #1E293B;   /* navy panel */
+  --color-surface-2: #334155; /* slate panel */
 
   /* ---- Color: text ---- */
-  --color-ink: #ffffff;        /* crisp white */
-  --color-ink-muted: #7a8899;  /* steel blue-grey */
+  --color-ink: #ffffff;
+  --color-ink-muted: #94A3B8;  /* slate blue-grey */
 
   /* ---- Color: brand ---- */
-  --color-primary: #2b7fff;      /* electric blue */
-  --color-primary-ink: #ffffff;  /* white on blue */
-  --color-accent: #ffdf20;       /* yellow */
+  --color-primary: #ffffff;      /* white — buttons, badges, nav highlights */
+  --color-primary-ink: #0F172A;  /* dark navy text on white surfaces */
+  --color-accent: #7DD3FC;       /* baby blue */
   --color-success: #00c950;      /* green */
-  --color-danger: #ea384c;       /* red */
+  --color-danger: #E11D48;       /* crimson red — pain points, errors, negative stats only */
 
   /* raw channels for alpha compositing (glows, tints) */
-  --primary-rgb: 43 127 255;
-  --accent-rgb: 255 223 32;
-  --danger-rgb: 234 56 76;
+  --primary-rgb: 255 255 255;
+  --accent-rgb: 125 211 252;
+  --danger-rgb: 225 29 72;
   --success-rgb: 0 201 80;
 
   /* ---- Borders ---- */
-  --color-border: rgba(43, 127, 255, 0.18);
+  --color-border: rgba(255, 255, 255, 0.12);
 
-  /* ---- Glass surfaces (dark blue-tinted glass) ---- */
-  --color-glass: rgba(13, 17, 23, 0.85);
-  --color-glass-border: rgba(43, 127, 255, 0.22);
-  --color-glass-border-subtle: rgba(43, 127, 255, 0.08);
+  /* ---- Glass surfaces (dark navy glass) ---- */
+  --color-glass: rgba(15, 23, 42, 0.85);
+  --color-glass-border: rgba(255, 255, 255, 0.18);
+  --color-glass-border-subtle: rgba(255, 255, 255, 0.06);
 
   /* ---- Radii ---- */
   --radius-sm: 8px;
@@ -71,19 +71,16 @@
   --dur-slow: 520ms;
 
   /* ---- Typography ----
-   * --font-clash is provided by next/font/local on <html>.
-   * Inter + Plex Arabic are self-hosted @font-face (see fonts.css). */
-  --font-inter: 'Inter';
+   * --font-sora is provided by next/font/local on <html>.
+   * Plex Arabic is self-hosted @font-face (see fonts.css). */
   --font-arabic-plex: 'IBM Plex Sans Arabic';
-  --font-display: var(--font-clash), 'Clash Display', system-ui, sans-serif;
-  --font-body: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-sora), 'Sora', system-ui, sans-serif;
+  --font-body: var(--font-sora), 'Sora', system-ui, sans-serif;
   --font-arabic: var(--font-arabic-plex), system-ui, sans-serif;
 }
 
 /* Arabic locale swaps body + display to the Arabic face for a coherent RTL feel */
 :root[lang='ar'] {
-  --font-display: var(--font-arabic-plex), 'IBM Plex Sans Arabic', system-ui,
-    sans-serif;
-  --font-body: var(--font-arabic-plex), 'IBM Plex Sans Arabic', system-ui,
-    sans-serif;
+  --font-display: var(--font-arabic-plex), 'IBM Plex Sans Arabic', system-ui, sans-serif;
+  --font-body: var(--font-arabic-plex), 'IBM Plex Sans Arabic', system-ui, sans-serif;
 }
