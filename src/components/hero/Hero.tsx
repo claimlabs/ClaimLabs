@@ -32,9 +32,9 @@ export function Hero() {
         <div className="absolute top-1/2 start-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/10 blur-[100px]" />
       </div>
 
-      <div className="container-x relative grid items-center gap-12 pb-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:pb-28">
+      <div className="container-x relative grid grid-cols-1 items-center gap-8 pb-20 sm:gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:pb-28">
         {/* Copy column */}
-        <div className="text-center lg:text-start">
+        <div className="min-w-0 overflow-hidden text-center lg:text-start">
           <h1
             id="hero-title"
             className="text-display font-bold tracking-tight"
@@ -61,7 +61,7 @@ export function Hero() {
             initial={reduced ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
-            className="mx-auto mt-6 max-w-xl text-lg text-ink-muted lg:mx-0"
+            className="mx-auto mt-6 max-w-xl text-base text-ink-muted sm:text-lg lg:mx-0"
           >
             {t('subhead')}
           </motion.p>
@@ -93,10 +93,10 @@ export function Hero() {
                 <dt
                   className={
                     s.tone === 'danger'
-                      ? 'font-display text-xl font-bold text-danger sm:text-2xl md:text-3xl'
+                      ? 'font-display text-lg font-bold text-danger sm:text-xl md:text-3xl'
                       : s.tone === 'primary'
-                        ? 'font-display text-xl font-bold text-primary sm:text-2xl md:text-3xl'
-                        : 'font-display text-xl font-bold text-ink sm:text-2xl md:text-3xl'
+                        ? 'font-display text-lg font-bold text-primary sm:text-xl md:text-3xl'
+                        : 'font-display text-lg font-bold text-ink sm:text-xl md:text-3xl'
                   }
                 >
                   {s.value}
