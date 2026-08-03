@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { PartyPopper, RotateCw, Trophy, Flame, Star, Lock, Frown } from 'lucide-react';
+import { PartyPopper, RotateCw, Trophy, Lock } from 'lucide-react';
 import { Confetti } from './Confetti';
 import { cn } from '@/lib/cn';
 
@@ -154,32 +154,6 @@ export function PrizeWheel() {
       {/* Phone mockup container */}
       <div className="relative w-full max-w-[320px] sm:max-w-[360px]">
 
-        {/* Floating card: Your streak (top-left) */}
-        <div
-          className="absolute -start-4 top-2 z-30 rounded-xl bg-white px-3 py-2.5 shadow-[0_8px_30px_rgba(0,0,0,0.3)] sm:-start-10 sm:top-4 sm:px-4 sm:py-3"
-          aria-hidden="true"
-        >
-          <p className="text-[0.6rem] font-bold text-slate-800 sm:text-xs">{t('streak')}</p>
-          <div className="mt-1.5 flex items-center gap-1.5 sm:gap-2.5">
-            {[t('play1'), t('play2'), t('play3')].map((label, i) => (
-              <div key={label} className="flex flex-col items-center gap-1">
-                <div className={cn(
-                  'flex h-5 w-5 items-center justify-center rounded-full sm:h-6 sm:w-6',
-                  i < 2 ? 'bg-accent text-white' : 'border-2 border-slate-300 bg-slate-100'
-                )}>
-                  <Flame className={cn('h-2.5 w-2.5 sm:h-3 sm:w-3', i < 2 ? 'text-white' : 'text-slate-400')} />
-                </div>
-                <span className="text-[0.45rem] text-slate-500 sm:text-[0.55rem]">{label}</span>
-              </div>
-            ))}
-          </div>
-          <div className="mt-1.5 flex items-center gap-0.5">
-            <div className="h-0.5 flex-1 rounded-full bg-accent" />
-            <div className="h-0.5 flex-1 rounded-full bg-accent" />
-            <div className="h-0.5 flex-1 rounded-full bg-slate-200" />
-          </div>
-        </div>
-
         {/* Floating badge: Score target (right) */}
         <div
           className={cn(
@@ -198,25 +172,6 @@ export function PrizeWheel() {
               ? t('spinTheWheel')
               : t('scoreTarget', { target: SCORE_TARGET })}
           </span>
-        </div>
-
-        {/* Floating card: Loyalty level (bottom-right) */}
-        <div
-          className="absolute -end-2 bottom-24 z-30 rounded-xl bg-white px-3 py-2.5 shadow-[0_8px_30px_rgba(0,0,0,0.3)] sm:-end-10 sm:bottom-28 sm:px-4 sm:py-3"
-          aria-hidden="true"
-        >
-          <div className="flex items-center gap-2">
-            <div className="flex h-7 w-7 items-center justify-center rounded-full bg-slate-100 sm:h-8 sm:w-8">
-              <Star className="h-3.5 w-3.5 text-accent sm:h-4 sm:w-4" />
-            </div>
-            <div>
-              <p className="text-[0.6rem] font-bold text-slate-800 sm:text-xs">{t('silverLevel')}</p>
-              <p className="text-[0.45rem] text-slate-500 sm:text-[0.55rem]">{t('ptsToGold')}</p>
-            </div>
-          </div>
-          <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-slate-200">
-            <div className="h-full w-3/5 rounded-full bg-slate-800" />
-          </div>
         </div>
 
         {/* Phone frame */}

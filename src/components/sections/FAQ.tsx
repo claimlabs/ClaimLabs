@@ -16,7 +16,7 @@ export function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <Section ariaLabelledby="faq-title">
+    <Section ariaLabelledby="faq-title" className="light-section">
       <div className="container-center">
         <SectionHeading
           id="faq-title"
