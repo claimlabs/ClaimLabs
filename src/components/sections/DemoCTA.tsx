@@ -28,7 +28,7 @@ export function DemoCTA() {
     'w-full rounded-md border border-border bg-canvas px-4 py-3 text-sm text-ink placeholder:text-ink-muted/60 outline-none transition-colors focus:border-primary';
 
   return (
-    <Section id="demo" ariaLabelledby="demo-title">
+    <Section id="demo" ariaLabelledby="demo-title" className="light-section">
       <div className="container-x">
         <div className="grid items-center gap-10 rounded-2xl border border-border bg-gradient-to-br from-surface via-surface to-canvas p-5 sm:p-8 md:p-12 lg:grid-cols-2">
           {/* Left: pitch */}

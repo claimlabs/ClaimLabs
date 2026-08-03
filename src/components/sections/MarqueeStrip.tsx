@@ -1,58 +1,45 @@
 'use client';
 
-const ITEMS = [
-  { text: 'FRUIT SLICE',       accent: true  },
-  { text: 'CATCH THE FRIES',   accent: false },
-  { text: 'LIVE LEADERBOARDS', accent: true  },
-  { text: 'COUPON CODES',      accent: false },
-  { text: 'OWN YOUR CUSTOMER', accent: true  },
-  { text: 'LAUNCH IN 1 DAY',   accent: false },
-  { text: 'REWARDS YOU CONTROL', accent: true },
-  { text: 'ZERO AGGREGATOR CUT', accent: false },
+import Image from 'next/image';
+
+const LOGOS = [
+  { src: '/images/juhayna.png', alt: 'Juhayna' },
+  { src: '/images/qasrelkababgi.png', alt: 'Qasr El Kababgi' },
+  { src: '/images/nestle.png', alt: 'Nestlé' },
+  { src: '/images/p-nashvile.png', alt: 'P. Nashville' },
 ];
 
-function Bullet() {
-  return (
-    <span
-      aria-hidden="true"
-      className="mx-6 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-current opacity-40"
-    />
-  );
-}
+const tripled = [...LOGOS, ...LOGOS, ...LOGOS];
 
 export function MarqueeStrip() {
-  /* Duplicate items so the animation loops seamlessly */
-  const doubled = [...ITEMS, ...ITEMS];
-
   return (
-    <div
-      aria-hidden="true"
-      className="relative overflow-hidden border-y border-primary/20 bg-canvas py-3"
-      style={{ maskImage: 'linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%)' }}
-    >
-      {/* top neon line */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-60" />
-      {/* bottom neon line */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-accent to-transparent opacity-60" />
+    <section className="border-y border-slate-100 bg-white py-10 sm:py-14">
+      <p className="mb-10 text-center text-sm font-extrabold uppercase tracking-[0.25em] text-slate-500">
+        Trusted by leading restaurants
+      </p>
 
-      <div className="flex w-max animate-marquee items-center whitespace-nowrap">
-        {doubled.map((item, i) => (
-          <span key={i} className="inline-flex items-center">
-            <span
-              className="text-xs font-bold tracking-[0.2em]"
-              style={{
-                color: item.accent ? 'var(--color-primary)' : 'var(--color-accent)',
-                textShadow: item.accent
-                  ? '0 0 12px rgba(var(--primary-rgb), 0.6)'
-                  : '0 0 12px rgba(var(--accent-rgb), 0.6)',
-              }}
-            >
-              {item.text}
-            </span>
-            <Bullet />
-          </span>
-        ))}
+      <div
+        className="relative overflow-hidden"
+        style={{ maskImage: 'linear-gradient(90deg, transparent 0%, black 6%, black 94%, transparent 100%)' }}
+        aria-hidden="true"
+      >
+        <div
+          className="flex w-max items-center gap-20"
+          style={{ animation: 'marquee 18s linear infinite' }}
+        >
+          {tripled.map((logo, i) => (
+            <div key={i} className="flex shrink-0 items-center px-4">
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                width={200}
+                height={80}
+                className="h-16 w-auto object-contain sm:h-20"
+              />
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

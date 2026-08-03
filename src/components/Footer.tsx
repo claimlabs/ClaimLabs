@@ -3,7 +3,6 @@
 import { useTranslations } from 'next-intl';
 import { Instagram, Linkedin, Facebook, Mail, MapPin } from 'lucide-react';
 import { Logo } from './Logo';
-import { LanguageToggle } from './LanguageToggle';
 
 export function Footer() {
   const t = useTranslations('footer');
@@ -94,11 +93,10 @@ export function Footer() {
               {t('region')}
             </span>
           </div>
-          <LanguageToggle />
         </div>
 
         <p className="mt-8 text-xs text-ink-muted/60">
-          © {new Date().getFullYear()} LOYA GAME. {t('rights')}
+          © {new Date().getFullYear()} ClaimLabs. {t('rights')}
         </p>
       </div>
     </footer>

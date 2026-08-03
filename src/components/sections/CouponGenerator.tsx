@@ -10,7 +10,7 @@ const PRIZES = ['FREEFRIES', 'DRINK', 'SAVE15', 'DESSERT', 'BOGO', 'SAVE25'];
 function randomCode() {
   const prize = PRIZES[Math.floor(Math.random() * PRIZES.length)];
   const suffix = Math.random().toString(36).slice(2, 6).toUpperCase();
-  return `LOYA-${prize}-${suffix}`;
+  return `CL-${prize}-${suffix}`;
 }
 
 export function CouponGenerator() {

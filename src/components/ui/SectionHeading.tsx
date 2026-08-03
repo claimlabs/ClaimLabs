@@ -26,14 +26,14 @@ export function SectionHeading({
       )}
     >
       <Reveal>
-        <span className="inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-accent shadow-[0_0_12px_rgba(var(--accent-rgb),0.2)]">
+        <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-accent/[0.06] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-accent">
           <span className="eyebrow-dot relative h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
           {eyebrow}
         </span>
       </Reveal>
       <Reveal delay={0.05}>
         <h2 id={id} className="text-h2 mt-5 font-bold">
-          <span className="gradient-text">{title.split(' ')[0]}</span>
+          <span className="text-accent">{title.split(' ')[0]}</span>
           {title.includes(' ') ? ' ' + title.split(' ').slice(1).join(' ') : ''}
         </h2>
       </Reveal>

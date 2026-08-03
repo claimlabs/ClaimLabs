@@ -1,11 +1,11 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import type React from 'react';
 import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Logo } from './Logo';
-import { LanguageToggle } from './LanguageToggle';
 import { Button } from './ui/Button';
 import { cn } from '@/lib/cn';
 
@@ -19,15 +19,7 @@ const SECTIONS = [
 
 export function Navbar() {
   const t = useTranslations('nav');
-  const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
@@ -38,15 +30,22 @@ export function Navbar() {
 
   return (
     <header
-      className={cn(
-        'fixed inset-x-0 top-0 z-50 transition-all duration-300',
-        scrolled
-          ? 'border-b border-border bg-canvas/80 backdrop-blur-xl'
-          : 'border-b border-transparent bg-transparent',
-      )}
+      className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white shadow-sm"
+      style={{
+        '--color-canvas': '#ffffff',
+        '--color-ink': '#0F172A',
+        '--color-ink-muted': '#64748B',
+        '--color-primary': '#0F172A',
+        '--color-primary-ink': '#ffffff',
+        '--color-surface': '#f8fafc',
+        '--color-surface-2': '#f1f5f9',
+        '--color-border': 'rgba(0,0,0,0.1)',
+        '--shadow-glow': 'none',
+        '--shadow-glow-lg': 'none',
+      } as React.CSSProperties}
     >
-      <nav className="container-x flex h-16 items-center justify-between gap-4 md:h-[4.5rem]">
-        <a href="#top" className="shrink-0" aria-label="LOYA GAME — home">
+      <nav className="flex h-16 w-full items-center justify-between gap-4 px-4 sm:px-6 md:h-[4.5rem] lg:ps-[clamp(1.5rem,9vw,9rem)] lg:pe-[clamp(1.5rem,5vw,4rem)]">
+        <a href="#top" className="shrink-0" aria-label="ClaimLabs — home">
           <Logo />
         </a>
 
@@ -55,7 +54,7 @@ export function Navbar() {
             <li key={s.id}>
               <a
                 href={`#${s.id}`}
-                className="rounded-full px-3 py-2 text-sm text-ink-muted transition-colors hover:text-ink"
+                className="rounded-full px-3 py-2 text-sm text-slate-600 transition-colors hover:text-slate-900"
               >
                 {t(s.key)}
               </a>
@@ -64,12 +63,11 @@ export function Navbar() {
         </ul>
 
         <div className="flex items-center gap-2 md:gap-3">
-          <LanguageToggle className="hidden sm:inline-flex" />
           <Button href="#demo" size="md" className="hidden sm:inline-flex">
             {t('bookDemo')}
           </Button>
           <button
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border text-ink lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-slate-800 lg:hidden"
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-label={open ? t('closeLabel') : t('menuLabel')}
@@ -86,7 +84,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
-            className="border-t border-border bg-canvas/95 backdrop-blur-xl lg:hidden"
+            className="border-t border-slate-200 bg-white lg:hidden"
           >
             <ul className="container-x flex flex-col py-4">
               {SECTIONS.map((s) => (
@@ -94,14 +92,13 @@ export function Navbar() {
                   <a
                     href={`#${s.id}`}
                     onClick={() => setOpen(false)}
-                    className="block rounded-lg px-3 py-3 text-lg text-ink-muted hover:bg-primary/10 hover:text-ink"
+                    className="block rounded-lg px-3 py-3 text-lg text-slate-600 hover:bg-slate-100 hover:text-slate-900"
                   >
                     {t(s.key)}
                   </a>
                 </li>
               ))}
-              <li className="mt-3 flex items-center justify-between gap-3 px-3">
-                <LanguageToggle />
+              <li className="mt-3 px-3">
                 <Button href="#demo" onClick={() => setOpen(false)}>
                   {t('bookDemo')}
                 </Button>

@@ -56,7 +56,7 @@ export function Dashboard() {
               <span className="h-3 w-3 rounded-full bg-primary/60" />
               <span className="h-3 w-3 rounded-full bg-ink-muted/40" />
               <span className="ms-3 text-xs text-ink-muted">
-                app.loyagame.com / analytics
+                app.claimlabs.com / analytics
               </span>
               <span className="ms-auto inline-flex items-center gap-1.5 rounded-full bg-success/10 px-2.5 py-1 text-xs font-medium text-success">
                 <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-success" />

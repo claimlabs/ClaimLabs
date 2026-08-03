@@ -66,9 +66,37 @@
 
   .container-x {
     width: 100%;
+    max-width: 88rem;
+    margin-inline: auto;
+    padding-inline: clamp(1.5rem, 5vw, 3.5rem);
+  }
+
+  /* Centered variant — used only for FAQ */
+  .container-center {
+    width: 100%;
     max-width: var(--max-content);
     margin-inline: auto;
     padding-inline: clamp(1.25rem, 5vw, 2.5rem);
+  }
+
+  /* Light-mode section override */
+  .light-section {
+    background-color: #ffffff;
+    color: #0F172A;
+    --color-canvas: #ffffff;
+    --color-ink: #0F172A;
+    --color-ink-muted: #64748B;
+    --color-primary: #0F172A;
+    --color-primary-ink: #ffffff;
+    --color-surface: #f1f5f9;
+    --color-surface-2: #e2e8f0;
+    --color-border: rgba(0, 0, 0, 0.1);
+    --color-glass: rgba(241, 245, 249, 0.9);
+    --color-glass-border: rgba(0, 0, 0, 0.08);
+    --shadow-lift: 0 4px 8px rgba(0, 0, 0, 0.08), 0 24px 60px -20px rgba(0, 0, 0, 0.12);
+    --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.06), 0 8px 24px -8px rgba(0, 0, 0, 0.1);
+    --shadow-glow: none;
+    --shadow-glow-lg: none;
   }
 
   /* Section vertical rhythm */

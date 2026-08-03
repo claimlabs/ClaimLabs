@@ -16,27 +16,26 @@ export async function generateMetadata({
   params: { locale: string };
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'meta' });
-  const baseUrl = 'https://loyagame.com';
+  const baseUrl = 'https://www.claimlabs.online';
 
   return {
     metadataBase: new URL(baseUrl),
     title: {
       default: t('title'),
-      template: `%s · LOYA GAME`,
+      template: `%s · ClaimLabs`,
     },
     description: t('description'),
     keywords: t('keywords'),
     alternates: {
-      canonical: locale === 'en' ? '/' : `/${locale}`,
-      languages: { en: '/', ar: '/ar' },
+      canonical: '/',
     },
     openGraph: {
       type: 'website',
       title: t('title'),
       description: t('description'),
-      siteName: 'LOYA GAME',
+      siteName: 'ClaimLabs',
       locale: locale === 'ar' ? 'ar_EG' : 'en_US',
-      images: [{ url: '/og.png', width: 1200, height: 630, alt: 'LOYA GAME' }],
+      images: [{ url: '/og.png', width: 1200, height: 630, alt: 'ClaimLabs' }],
     },
     twitter: {
       card: 'summary_large_image',
@@ -60,12 +59,10 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
   const messages = await getMessages();
-  const dir = locale === 'ar' ? 'rtl' : 'ltr';
 
   return (
     <html
       lang={locale}
-      dir={dir}
       className={sora.variable}
       suppressHydrationWarning
     >

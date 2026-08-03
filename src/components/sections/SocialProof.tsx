@@ -51,9 +51,6 @@ export function SocialProof() {
           </figure>
         </Reveal>
 
-        <Reveal delay={0.15}>
-          <TrustedLogos className="mt-14" />
-        </Reveal>
       </div>
     </Section>
   );

@@ -17,7 +17,7 @@ export function FAQ() {
 
   return (
     <Section ariaLabelledby="faq-title">
-      <div className="container-x">
+      <div className="container-center">
         <SectionHeading
           id="faq-title"
           eyebrow={t('eyebrow')}

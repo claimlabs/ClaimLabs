@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "LOYA GAME — Turn diners into players. Players into regulars.",
+    "title": "ClaimLabs — Turn diners into players. Players into regulars.",
     "description": "Branded skill-games that pull customers off aggregators and onto your own menu — with rewards you control. A direct conversion system for restaurants.",
     "keywords": "restaurant gamification, loyalty games, restaurant marketing Egypt, direct ordering, customer retention, branded games"
   },
@@ -20,37 +20,7 @@
     "titleLine2": "Players into regulars.",
     "subhead": "Branded skill-games that pull customers off aggregators and onto your own menu — with rewards you control.",
     "ctaPrimary": "Book a demo",
-    "ctaSecondary": "See how it works",
-    "wheel": {
-      "label": "Spin to win — try it",
-      "spin": "SPIN",
-      "spinning": "Spinning…",
-      "again": "Spin again",
-      "youWon": "You won",
-      "srInstructions": "Interactive prize wheel demo. Press Enter or Space to spin and land on a reward.",
-      "liveWin": "The wheel landed on {prize}",
-      "footnote": "This is the exact reward moment your customers feel — every time.",
-      "prizes": {
-        "freeDessert": "Free dessert",
-        "off15": "15% off",
-        "freeDrink": "Free drink",
-        "off25": "25% off",
-        "buy1get1": "Buy 1 Get 1",
-        "freeFries": "Free fries",
-        "off10": "10% off",
-        "vipPoints": "2× points"
-      }
-    },
-    "stats": {
-      "marginLost": "margin lost to aggregators",
-      "ownData": "of the customer data is yours",
-      "liveIn": "to go live"
-    },
-    "statValues": {
-      "margin": "25–30%",
-      "data": "100%",
-      "live": "1 day"
-    }
+    "ctaSecondary": "See how it works"
   },
   "problem": {
     "eyebrow": "The problem",
@@ -304,7 +274,7 @@
       "terms": "Terms"
     },
     "contactTitle": "Get in touch",
-    "email": "hello@loyagame.com",
+    "email": "hello@claimlabs.com",
     "region": "Cairo, Egypt · Serving MENA",
     "rights": "All rights reserved.",
     "socialNote": "Social links — placeholder"

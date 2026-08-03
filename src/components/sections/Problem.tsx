@@ -16,7 +16,7 @@ export function Problem() {
   const t = useTranslations('problem');
 
   return (
-    <Section id="problem" ariaLabelledby="problem-title">
+    <Section id="problem" ariaLabelledby="problem-title" className="light-section">
       <div className="container-x">
         <SectionHeading
           id="problem-title"

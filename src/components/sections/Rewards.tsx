@@ -18,7 +18,7 @@ export function Rewards() {
   const t = useTranslations('rewards');
 
   return (
-    <Section id="rewards" ariaLabelledby="rewards-title">
+    <Section id="rewards" ariaLabelledby="rewards-title" className="light-section">
       <div className="container-x">
         <SectionHeading
           id="rewards-title"

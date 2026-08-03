@@ -16,7 +16,7 @@ export function Training() {
   const t = useTranslations('training');
 
   return (
-    <Section ariaLabelledby="training-title">
+    <Section ariaLabelledby="training-title" className="light-section">
       <div className="container-x">
         <div className="overflow-hidden rounded-2xl border border-primary/15 bg-gradient-to-br from-primary/[0.06] via-surface to-canvas p-8 shadow-card md:p-12">
           <div className="flex flex-wrap items-center justify-between gap-4">

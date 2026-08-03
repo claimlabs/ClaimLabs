@@ -3,19 +3,12 @@
 import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 import { Button } from '../ui/Button';
-import { PrizeWheel } from './PrizeWheel';
-import { TrustedLogos } from '../sections/TrustedLogos';
 
 export function Hero() {
   const t = useTranslations('hero');
   const reduced = useReducedMotion();
-
-  const stats = [
-    { value: t('statValues.margin'), label: t('stats.marginLost'), tone: 'danger' },
-    { value: t('statValues.data'), label: t('stats.ownData'), tone: 'primary' },
-    { value: t('statValues.live'), label: t('stats.liveIn'), tone: 'ink' },
-  ] as const;
 
   return (
     <section
@@ -32,7 +25,7 @@ export function Hero() {
         <div className="absolute top-1/2 start-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/10 blur-[100px]" />
       </div>
 
-      <div className="container-x relative grid grid-cols-1 items-center gap-8 pb-20 sm:gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:pb-28">
+      <div className="relative grid w-full grid-cols-1 items-center gap-8 pb-20 px-[clamp(1.5rem,5vw,3.5rem)] sm:gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:pb-28 lg:ps-[clamp(1.5rem,9vw,9rem)] lg:pe-[clamp(1.5rem,5vw,4rem)]">
         {/* Copy column */}
         <div className="min-w-0 overflow-hidden text-center lg:text-start">
           <h1
@@ -48,7 +41,7 @@ export function Hero() {
               {t('titleLine1')}
             </motion.span>
             <motion.span
-              className={`block text-accent ${reduced ? '' : 'animate-glitch'}`}
+              className="block text-accent"
               initial={reduced ? false : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.15 }}
@@ -61,7 +54,7 @@ export function Hero() {
             initial={reduced ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
-            className="mx-auto mt-6 max-w-xl text-base text-ink-muted sm:text-lg lg:mx-0"
+            className="mt-6 mx-auto max-w-xl text-base text-ink-muted sm:text-lg lg:mx-0"
           >
             {t('subhead')}
           </motion.p>
@@ -70,7 +63,7 @@ export function Hero() {
             initial={reduced ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.35 }}
-            className="mt-8 flex flex-col items-center gap-3 sm:flex-row lg:justify-start"
+            className="mt-8 flex flex-wrap items-center justify-center gap-3 lg:justify-start"
           >
             <Button href="#demo" size="lg">
               {t('ctaPrimary')}
@@ -80,49 +73,24 @@ export function Hero() {
               {t('ctaSecondary')}
             </Button>
           </motion.div>
-
-          {/* Stat strip */}
-          <motion.dl
-            initial={reduced ? false : { opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="mx-auto mt-12 grid max-w-lg grid-cols-3 gap-0 overflow-hidden rounded-2xl glass-card lg:mx-0 w-full"
-          >
-            {stats.map((s, i) => (
-              <div key={s.label} className={`px-3 py-4 text-center sm:px-5 sm:py-5 lg:text-start ${i > 0 ? 'border-s border-border' : ''}`}>
-                <dt
-                  className={
-                    s.tone === 'danger'
-                      ? 'font-display text-lg font-bold text-danger sm:text-xl md:text-3xl'
-                      : s.tone === 'primary'
-                        ? 'font-display text-lg font-bold text-primary sm:text-xl md:text-3xl'
-                        : 'font-display text-lg font-bold text-ink sm:text-xl md:text-3xl'
-                  }
-                >
-                  {s.value}
-                </dt>
-                <dd className="mt-1 text-xs leading-snug text-ink-muted">
-                  {s.label}
-                </dd>
-              </div>
-            ))}
-          </motion.dl>
         </div>
 
-        {/* Trusted logos — mobile only (between copy & wheel) */}
-        <TrustedLogos className="block lg:hidden" />
-
-        {/* Wheel column */}
+        {/* App screenshot column */}
         <motion.div
-          initial={reduced ? false : { opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={reduced ? false : { opacity: 0, scale: 0.95, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="flex w-full flex-col items-center"
+          className="flex w-full items-center justify-center lg:justify-end lg:-me-16 lg:overflow-visible"
         >
-          <PrizeWheel />
-          <p className="mt-2 max-w-xs text-center text-xs text-ink-muted/80">
-            {t('wheel.footnote')}
-          </p>
+          <Image
+            src="/images/loya-hero.png"
+            alt="ClaimLabs mobile app showing spin wheel, leaderboard, and rewards"
+            width={800}
+            height={960}
+            priority
+            className="w-full max-w-sm mx-auto lg:mx-0 lg:w-[120%] lg:max-w-[1100px]"
+            style={{ objectFit: 'contain' }}
+          />
         </motion.div>
       </div>
     </section>
