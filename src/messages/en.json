@@ -20,7 +20,39 @@
     "titleLine2": "Players into regulars.",
     "subhead": "Branded skill-games that pull customers off aggregators and onto your own menu — with rewards you control.",
     "ctaPrimary": "Book a demo",
-    "ctaSecondary": "See how it works"
+    "ctaSecondary": "See how it works",
+    "wheel": {
+      "streak": "Your streak",
+      "play1": "Mon", "play2": "Tue", "play3": "Wed",
+      "spinTheWheel": "Spin the wheel",
+      "scoreTarget": "Score {target} to unlock",
+      "silverLevel": "Silver level",
+      "ptsToGold": "200 pts to Gold",
+      "srInstructions": "Prize wheel — spin to win a reward",
+      "spin": "SPIN",
+      "spinning": "...",
+      "playToUnlock": "Play to unlock",
+      "chooseGame": "Choose a game to earn your spin",
+      "catchTheFries": "Catch the Fries",
+      "fruitySlice": "Fruit Slice",
+      "liveWin": "You won: {prize}",
+      "youEarnedSpin": "You earned a spin!",
+      "unlocking": "Unlocking wheel…",
+      "spinNow": "Tap SPIN to win your reward",
+      "youWon": "You won:",
+      "playAgain": "Play again",
+      "footnote": "This is the exact reward moment your customers feel — every time.",
+      "prizes": {
+        "off10": "10% Off",
+        "freeDrink": "Free Drink",
+        "off15": "15% Off",
+        "freeFries": "Free Fries",
+        "vipPoints": "VIP Points",
+        "freeDessert": "Free Dessert",
+        "buy1get1": "Buy 1 Get 1",
+        "off25": "25% Off"
+      }
+    }
   },
   "problem": {
     "eyebrow": "The problem",

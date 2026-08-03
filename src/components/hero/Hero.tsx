@@ -3,8 +3,8 @@
 import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import Image from 'next/image';
 import { Button } from '../ui/Button';
+import { PrizeWheel } from './PrizeWheel';
 
 export function Hero() {
   const t = useTranslations('hero');
@@ -75,22 +75,14 @@ export function Hero() {
           </motion.div>
         </div>
 
-        {/* App screenshot column */}
+        {/* Prize wheel — desktop only */}
         <motion.div
           initial={reduced ? false : { opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="flex w-full items-center justify-center lg:justify-end lg:-me-16 lg:overflow-visible"
+          className="hidden lg:flex w-full items-center justify-end"
         >
-          <Image
-            src="/images/loya-hero.png"
-            alt="ClaimLabs mobile app showing spin wheel, leaderboard, and rewards"
-            width={800}
-            height={960}
-            priority
-            className="w-full max-w-sm mx-auto lg:mx-0 lg:w-[120%] lg:max-w-[1100px]"
-            style={{ objectFit: 'contain' }}
-          />
+          <PrizeWheel />
         </motion.div>
       </div>
     </section>

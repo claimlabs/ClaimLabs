@@ -15,7 +15,7 @@ export function MarqueeStrip() {
   return (
     <section className="border-y border-slate-100 bg-white py-10 sm:py-14">
       <p className="mb-10 text-center text-sm font-extrabold uppercase tracking-[0.25em] text-slate-500">
-        Trusted by leading restaurants
+        Trusted by leading companies
       </p>
 
       <div
