@@ -56,8 +56,8 @@
 @layer utilities {
   /* Fluid display scale */
   .text-display {
-    font-size: clamp(2rem, 7vw, 5.75rem);
-    line-height: 0.98;
+    font-size: clamp(3rem, 10vw, 5.75rem);
+    line-height: 1.0;
   }
   .text-h2 {
     font-size: clamp(1.625rem, 4.5vw, 3.25rem);

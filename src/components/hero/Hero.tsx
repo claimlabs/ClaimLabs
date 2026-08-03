@@ -27,7 +27,7 @@ export function Hero() {
 
       <div className="relative grid w-full grid-cols-1 items-center gap-8 pb-20 px-[clamp(1.5rem,5vw,3.5rem)] sm:gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:pb-28 lg:ps-[clamp(1.5rem,9vw,9rem)] lg:pe-[clamp(1.5rem,5vw,4rem)]">
         {/* Copy column */}
-        <div className="min-w-0 overflow-hidden text-center lg:text-start">
+        <div className="min-w-0 overflow-hidden text-start">
           <h1
             id="hero-title"
             className="text-display font-bold tracking-tight"
@@ -54,7 +54,7 @@ export function Hero() {
             initial={reduced ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
-            className="mt-6 mx-auto max-w-xl text-base text-ink-muted sm:text-lg lg:mx-0"
+            className="mt-6 max-w-xl text-base text-ink-muted sm:text-lg"
           >
             {t('subhead')}
           </motion.p>
@@ -63,7 +63,7 @@ export function Hero() {
             initial={reduced ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.35 }}
-            className="mt-8 flex flex-wrap items-center justify-center gap-3 lg:justify-start"
+            className="mt-8 flex flex-wrap items-center justify-start gap-3"
           >
             <Button href="#demo" size="lg">
               {t('ctaPrimary')}
