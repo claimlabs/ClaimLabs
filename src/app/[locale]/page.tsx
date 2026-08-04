@@ -5,9 +5,8 @@ import { MarqueeStrip } from '@/components/sections/MarqueeStrip';
 import { Problem } from '@/components/sections/Problem';
 import { HowItWorks } from '@/components/sections/HowItWorks';
 import { Games } from '@/components/sections/Games';
-import { Rewards } from '@/components/sections/Rewards';
 import { Dashboard } from '@/components/sections/Dashboard';
-import { Training } from '@/components/sections/Training';
+import { WhyUs } from '@/components/sections/WhyUs';
 import { DemoCTA } from '@/components/sections/DemoCTA';
 import { FAQ } from '@/components/sections/FAQ';
 import { Footer } from '@/components/Footer';
@@ -28,9 +27,8 @@ export default function HomePage({
         <Problem />
         <HowItWorks />
         <Games />
-        <Rewards />
         <Dashboard />
-        <Training />
+        <WhyUs />
 
         <DemoCTA />
         <FAQ />

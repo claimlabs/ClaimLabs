@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "ClaimLabs — Turn diners into players. Players into regulars.",
-    "description": "Branded skill-games that pull customers off aggregators and onto your own menu — with rewards you control. A direct conversion system for restaurants.",
+    "description": "Branded games that pull customers off aggregators and onto your own menu — with rewards you control. A direct conversion system for restaurants.",
     "keywords": "restaurant gamification, loyalty games, restaurant marketing Egypt, direct ordering, customer retention, branded games"
   },
   "nav": {
@@ -16,9 +16,9 @@
     "langLabel": "Language"
   },
   "hero": {
-    "titleLine1": "Turn diners into players.",
-    "titleLine2": "Players into regulars.",
-    "subhead": "Branded skill-games that pull customers off aggregators and onto your own menu — with rewards you control.",
+    "titleLine1": "Play the game. Claim the reward.",
+    "titleLine2": "Come back for more.",
+    "subhead": "Stop losing customers to delivery apps. Bring them back with games they actually want to play.",
     "ctaPrimary": "Book a demo",
     "ctaSecondary": "See how it works",
     "wheel": {
@@ -56,39 +56,39 @@
   },
   "problem": {
     "eyebrow": "The problem",
-    "title": "You cook the food. The aggregator keeps the customer.",
+    "title": "Your restaurant feeds 500 people a week. You know none of them.",
     "subtitle": "Every order through a delivery app costs you margin and hands over the one thing you can't buy back — the relationship with your customer.",
     "cards": {
       "tax": {
-        "title": "The aggregator tax",
+        "title": "The aggregator share",
         "body": "25–30% of every order vanishes in commissions. On thin restaurant margins, that's often the difference between profit and loss.",
         "stat": "−25–30%",
         "statLabel": "per order in commission"
       },
       "data": {
-        "title": "You're flying blind",
+        "title": "You own zero customer data",
         "body": "The app owns the customer's name, number, and habits. You never learn who ordered, what they love, or how to bring them back.",
         "stat": "0",
         "statLabel": "customer records you keep"
       },
       "social": {
-        "title": "Likes ≠ orders",
-        "body": "Social media buys you attention, not conversion. A viral reel doesn't fill tables or move your own menu.",
-        "stat": "≈2%",
-        "statLabel": "of followers ever order"
+        "title": "Social media doesn't bring them back",
+        "body": "You get the likes. The delivery app gets the order.",
+        "stat": "",
+        "statLabel": ""
       }
     },
-    "kicker": "There's a way to flip it — make the fun happen on your turf, and keep every customer you earn."
+    "kicker": "Stop renting your customers. Start owning them."
   },
   "how": {
     "eyebrow": "How it works",
-    "title": "Three steps. From bored scroll to repeat order.",
-    "subtitle": "A branded game lives on your own site. Customers play for a reward, then redeem it with you — never through a middleman.",
+    "title": "Turn a scroll into an order. In three steps.",
+    "subtitle": "A game on your page turns scrollers into paying customers — they play, win a reward, and order from you to redeem it. No delivery app involved.",
     "steps": {
       "play": {
         "step": "01",
         "title": "Customer plays",
-        "body": "They land on your branded skill-game — a quick, competitive round they actually want to replay. It lives on your menu, your domain, your brand."
+        "body": "They land on your branded game — a quick, competitive round they actually want to replay. It lives on your menu, your domain, your brand."
       },
       "win": {
         "step": "02",
@@ -104,8 +104,8 @@
   },
   "games": {
     "eyebrow": "The games",
-    "title": "Two games built to be replayed.",
-    "subtitle": "Skill-based, fast, and fully branded to your restaurant. Easy to learn, hard to put down — the replay is where retention comes from.",
+    "title": "One round. One reward. One reason to order.",
+    "subtitle": "Fast, fun, and branded to your restaurant. Customers play to win a real reward — and order direct to claim it. Each game is built around one thing: making customers want to come back and play again.",
     "tag": "Fully branded to you",
     "fruit": {
       "name": "Fruit Slice",
@@ -186,14 +186,37 @@
     "chartTitle": "Plays vs. redemptions",
     "chartLegendPlays": "Plays",
     "chartLegendRedemptions": "Redemptions",
-    "campaignsTitle": "Top campaigns",
+    "campaignsTitle": "Top players",
     "campaigns": [
-      { "name": "Weekend Double Points", "metric": "634 redemptions" },
-      { "name": "New Burger Launch", "metric": "512 redemptions" },
-      { "name": "Slow-Tuesday Boost", "metric": "301 redemptions" }
+      { "name": "Nour A.", "metric": "8,420 pts", "prize": "EGP 20,000" },
+      { "name": "Omar K.", "metric": "7,990 pts", "prize": "EGP 10,000" },
+      { "name": "Salma H.", "metric": "7,310 pts", "prize": "EGP 5,000" }
     ],
     "days": ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri"],
     "note": "Sample data shown for illustration."
+  },
+  "whyUs": {
+    "eyebrow": "Why ClaimLabs",
+    "title": "Not a loyalty card. Not a points app. A game they come back to play.",
+    "subtitle": "ClaimLabs turns your restaurant into a skill-game experience — and makes customers order direct to claim what they earned.",
+    "reasons": {
+      "data": {
+        "title": "Skill games, not gimmicks",
+        "body": "Real competitive rounds — Fruit Slice, Catch the Fries — that customers replay for the challenge, not just the prize."
+      },
+      "commission": {
+        "title": "Fully branded to you",
+        "body": "The game wears your colors, your logo, your menu items. Customers see your brand — not ours — every single play."
+      },
+      "speed": {
+        "title": "Rewards that drive real orders",
+        "body": "Players win a discount or free item redeemable only by ordering from you. The reward is the reason to order."
+      },
+      "control": {
+        "title": "You control everything",
+        "body": "Set your prizes, your odds, your campaign dates. Launch a weekend promo or new-item push in minutes."
+      }
+    }
   },
   "training": {
     "eyebrow": "Staff training & rollout",
@@ -283,8 +306,7 @@
       { "q": "How does redemption work?", "a": "Two ways: in-store, where your staff redeems a single-use code at the cashier; and online, where the customer applies the code at checkout on your own ordering channel." },
       { "q": "Can I control what customers win?", "a": "Completely. You set the prize list and the exact odds for each reward, plus start and end dates for campaigns — so promos never exceed your margin." },
       { "q": "How long until we're live?", "a": "Typically one day. We configure your game and campaigns, connect them to your menu, and train your staff to redeem codes — then you launch." },
-      { "q": "Is it hard for my staff to use?", "a": "No. Redeeming a code takes seconds at the register. We train your team and leave a simple one-page guide." },
-      { "q": "What does it cost?", "a": "It's a monthly subscription in EGP with tiers for single locations up to multi-branch brands. See the pricing section — book a demo for exact numbers for your setup." }
+      { "q": "Is it hard for my staff to use?", "a": "No. Redeeming a code takes seconds at the register. We train your team and leave a simple one-page guide." }
     ]
   },
   "footer": {

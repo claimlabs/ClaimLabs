@@ -26,7 +26,7 @@ export function SectionHeading({
       )}
     >
       <Reveal>
-        <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-accent/[0.06] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+        <span className="eyebrow-pill inline-flex items-center gap-2 rounded-full border border-primary/30 bg-accent/[0.06] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-accent">
           <span className="eyebrow-dot relative h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
           {eyebrow}
         </span>

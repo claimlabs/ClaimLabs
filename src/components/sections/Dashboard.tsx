@@ -64,10 +64,10 @@ export function Dashboard() {
               </span>
             </div>
 
-            <div className="grid gap-5 p-3 sm:p-5 lg:grid-cols-[1.5fr_1fr]">
+            <div className="grid gap-5 overflow-x-auto p-3 sm:p-5 lg:grid-cols-[1.5fr_1fr]">
               {/* Left: KPIs + chart */}
               <div>
-                <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+                <div className="grid grid-cols-2 gap-3">
                   {KPIS.map(({ key, icon: Icon }) => (
                     <div
                       key={key}
@@ -141,30 +141,28 @@ export function Dashboard() {
                 </div>
               </div>
 
-              {/* Right: top campaigns */}
+              {/* Right: leaderboard */}
               <div className="rounded-lg border border-border bg-canvas p-5">
                 <h3 className="text-sm font-semibold">{t('campaignsTitle')}</h3>
-                <ul className="mt-4 flex flex-col gap-3">
-                  {campaigns.map((c, i) => (
-                    <li key={c.name} className="flex items-center gap-3">
-                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-primary/10 font-display text-sm font-bold text-primary">
-                        {i + 1}
+                <ul className="mt-4 flex flex-col gap-2">
+                  {(campaigns as { name: string; metric: string; prize: string }[]).map((c, i) => (
+                    <li
+                      key={c.name}
+                      className={`flex items-center gap-3 rounded-lg p-3 ${i === 0 ? 'bg-amber-500/10 border border-amber-400/30' : 'border border-border'}`}
+                    >
+                      <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-md font-display text-sm font-bold ${i === 0 ? 'bg-amber-400/20 text-amber-400' : 'bg-primary/10 text-primary'}`}>
+                        {i === 0 ? '🥇' : i === 1 ? '🥈' : '🥉'}
                       </span>
                       <div className="min-w-0 flex-1">
-                        <p className="truncate text-sm font-medium">{c.name}</p>
+                        <p className="truncate text-sm font-semibold">{c.name}</p>
                         <p className="text-xs text-ink-muted">{c.metric}</p>
                       </div>
+                      <span className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-bold ${i === 0 ? 'bg-amber-400/20 text-amber-400' : 'bg-primary/10 text-primary'}`}>
+                        {c.prize}
+                      </span>
                     </li>
                   ))}
                 </ul>
-                <div className="mt-5 rounded-md border border-dashed border-border p-4 text-center">
-                  <p className="font-display text-3xl font-bold text-primary">
-                    {t('kpiValues.returning')}
-                  </p>
-                  <p className="mt-1 text-xs text-ink-muted">
-                    {t('kpis.returning')}
-                  </p>
-                </div>
               </div>
             </div>
           </div>

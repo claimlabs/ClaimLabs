@@ -33,9 +33,11 @@ export function Problem() {
                   <span className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-danger/10 text-danger">
                     <Icon className="h-6 w-6" strokeWidth={1.75} aria-hidden="true" />
                   </span>
-                  <span className="font-display text-3xl font-bold text-danger">
-                    {t(`cards.${key}.stat`)}
-                  </span>
+                  {t(`cards.${key}.stat`) && (
+                    <span className="font-display text-3xl font-bold text-danger">
+                      {t(`cards.${key}.stat`)}
+                    </span>
+                  )}
                 </div>
                 <h3 className="mt-6 text-xl font-semibold">
                   {t(`cards.${key}.title`)}
@@ -43,9 +45,11 @@ export function Problem() {
                 <p className="mt-3 text-sm leading-relaxed text-ink-muted">
                   {t(`cards.${key}.body`)}
                 </p>
-                <p className="mt-5 text-xs uppercase tracking-wider text-ink-muted/70">
-                  {t(`cards.${key}.statLabel`)}
-                </p>
+                {t(`cards.${key}.statLabel`) && (
+                  <p className="mt-5 text-xs uppercase tracking-wider text-ink-muted/70">
+                    {t(`cards.${key}.statLabel`)}
+                  </p>
+                )}
               </article>
             </Reveal>
           ))}

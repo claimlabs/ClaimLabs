@@ -99,6 +99,16 @@
     --shadow-glow-lg: none;
   }
 
+  /* Eyebrow pill on white/light sections → navy instead of baby blue */
+  .light-section .eyebrow-pill {
+    color: #0F172A;
+    border-color: rgba(15, 23, 42, 0.2);
+    background-color: rgba(15, 23, 42, 0.04);
+  }
+  .light-section .eyebrow-pill .eyebrow-dot {
+    background-color: #0F172A;
+  }
+
   /* Section vertical rhythm */
   .section-y {
     padding-block: var(--space-section);

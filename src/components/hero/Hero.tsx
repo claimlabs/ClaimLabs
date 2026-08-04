@@ -69,9 +69,6 @@ export function Hero() {
               {t('ctaPrimary')}
               <ArrowRight className="h-5 w-5 rtl:rotate-180" aria-hidden="true" />
             </Button>
-            <Button href="#how" size="lg" variant="secondary">
-              {t('ctaSecondary')}
-            </Button>
           </motion.div>
         </div>
 
