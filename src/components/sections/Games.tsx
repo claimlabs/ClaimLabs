@@ -43,9 +43,9 @@ export function Games() {
             ))}
           </div>
 
-          {/* Right: tall portrait image — hidden on mobile */}
+          {/* Right: tall portrait image */}
           <Reveal delay={0.2}>
-            <div className="hidden w-full overflow-hidden rounded-2xl lg:block">
+            <div className="w-full overflow-hidden rounded-2xl max-h-[420px] lg:max-h-none">
               <Image
                 src="/images/GAME 3.png"
                 alt="Game experience on mobile"
