@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "ClaimLabs — Turn diners into players. Players into regulars.",
-    "description": "Branded games that pull customers off aggregators and onto your own menu — with rewards you control. A direct conversion system for restaurants.",
+    "description": "Branded games that turn one-time diners into loyal regulars — with rewards you control. A retention system built for restaurants.",
     "keywords": "restaurant gamification, loyalty games, restaurant marketing Egypt, direct ordering, customer retention, branded games"
   },
   "nav": {
@@ -18,7 +18,7 @@
   "hero": {
     "titleLine1": "Play the game. Claim the reward.",
     "titleLine2": "Come back for more.",
-    "subhead": "Stop losing customers to delivery apps. Bring them back with games they actually want to play.",
+    "subhead": "Turn one-time diners into regulars with games they actually want to play.",
     "ctaPrimary": "Book a demo",
     "ctaSecondary": "See how it works",
     "wheel": {
@@ -57,33 +57,33 @@
   "problem": {
     "eyebrow": "The problem",
     "title": "Your restaurant feeds 500 people a week. You know none of them.",
-    "subtitle": "Every order through a delivery app costs you margin and hands over the one thing you can't buy back — the relationship with your customer.",
+    "subtitle": "Hundreds of customers walk through your door every week. Without a reason to come back, most of them never do.",
     "cards": {
       "tax": {
-        "title": "The aggregator share",
-        "body": "25–30% of every order vanishes in commissions. On thin restaurant margins, that's often the difference between profit and loss.",
-        "stat": "−25–30%",
-        "statLabel": "per order in commission"
+        "title": "One visit and gone",
+        "body": "Most diners try a restaurant once and never return. There's no mechanism pulling them back — no habit, no hook, no reason.",
+        "stat": "1×",
+        "statLabel": "the average customer visits"
       },
       "data": {
         "title": "You own zero customer data",
-        "body": "The app owns the customer's name, number, and habits. You never learn who ordered, what they love, or how to bring them back.",
+        "body": "You never learn who ordered, what they love, or how to bring them back. Every visit starts from zero.",
         "stat": "0",
         "statLabel": "customer records you keep"
       },
       "social": {
         "title": "Social media doesn't bring them back",
-        "body": "You get the likes. The delivery app gets the order.",
+        "body": "Likes and follows don't translate into return visits. There's no loop that turns a follower into a regular.",
         "stat": "",
         "statLabel": ""
       }
     },
-    "kicker": "Stop renting your customers. Start owning them."
+    "kicker": "Give them a reason to come back. Every day."
   },
   "how": {
     "eyebrow": "How it works",
     "title": "Turn a scroll into an order. In three steps.",
-    "subtitle": "A game on your page turns scrollers into paying customers — they play, win a reward, and order from you to redeem it. No delivery app involved.",
+    "subtitle": "A game on your page turns one-time visitors into regulars — they play, win a reward, and come back to redeem it.",
     "steps": {
       "play": {
         "step": "01",
@@ -162,7 +162,7 @@
   "dashboard": {
     "eyebrow": "Analytics dashboard",
     "title": "See exactly what the game is doing for the business.",
-    "subtitle": "Plays, redemptions, returning customers, and campaign performance — in one live view. The customer data the aggregators kept from you, finally yours.",
+    "subtitle": "Plays, redemptions, returning customers, and campaign performance — in one live view. See exactly what's working and who's coming back.",
     "tag": "Sub-product",
     "live": "Live",
     "kpis": {
