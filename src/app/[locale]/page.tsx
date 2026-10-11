@@ -1,7 +1,6 @@
 import { setRequestLocale } from 'next-intl/server';
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/hero/Hero';
-import { MarqueeStrip } from '@/components/sections/MarqueeStrip';
 import { Problem } from '@/components/sections/Problem';
 import { HowItWorks } from '@/components/sections/HowItWorks';
 import { Games } from '@/components/sections/Games';
@@ -23,8 +22,7 @@ export default function HomePage({
       <Navbar />
       <main>
         <Hero />
-        <MarqueeStrip />
-        <Problem />
+<Problem />
         <HowItWorks />
         <Games />
         <Dashboard />
