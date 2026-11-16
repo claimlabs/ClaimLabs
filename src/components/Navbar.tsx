@@ -30,16 +30,16 @@ export function Navbar() {
 
   return (
     <header
-      className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white shadow-sm"
+      className="fixed inset-x-0 top-0 z-50 border-b border-[#141414]/10 bg-[#F2F0EB] shadow-sm"
       style={{
-        '--color-canvas': '#ffffff',
-        '--color-ink': '#0F172A',
-        '--color-ink-muted': '#64748B',
-        '--color-primary': '#0F172A',
-        '--color-primary-ink': '#ffffff',
-        '--color-surface': '#f8fafc',
-        '--color-surface-2': '#f1f5f9',
-        '--color-border': 'rgba(0,0,0,0.1)',
+        '--color-canvas': '#F2F0EB',
+        '--color-ink': '#141414',
+        '--color-ink-muted': '#6B675F',
+        '--color-primary': '#141414',
+        '--color-primary-ink': '#F2F0EB',
+        '--color-surface': '#FAF9F6',
+        '--color-surface-2': '#E8E5DE',
+        '--color-border': 'rgba(20,20,20,0.12)',
         '--shadow-glow': 'none',
         '--shadow-glow-lg': 'none',
       } as React.CSSProperties}
@@ -84,7 +84,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
-            className="border-t border-slate-200 bg-white lg:hidden"
+            className="border-t border-[#141414]/10 bg-[#F2F0EB] lg:hidden"
           >
             <ul className="container-x flex flex-col py-4">
               {SECTIONS.map((s) => (

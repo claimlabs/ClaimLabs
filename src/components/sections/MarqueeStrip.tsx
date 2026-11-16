@@ -13,7 +13,7 @@ const tripled = [...LOGOS, ...LOGOS, ...LOGOS];
 
 export function MarqueeStrip() {
   return (
-    <section className="border-y border-slate-100 bg-white py-10 sm:py-14">
+    <section className="border-y border-[#141414]/10 bg-[#F2F0EB] py-10 sm:py-14">
       <p className="mb-10 text-center text-sm font-extrabold uppercase tracking-[0.25em] text-slate-500">
         Trusted by leading companies
       </p>

@@ -4,41 +4,41 @@
  *  Re-skin the entire site by editing THIS file only.
  *  Components reference these via Tailwind theme tokens.
  *
- *  Palette reference: ekbarfirm.online
- *  Dark near-black canvas · white ink · silver/platinum primary
+ *  Palette reference: makitgo.vercel.app
+ *  Near-black · warm cream · orange-red accent
  * ============================================================
  */
 
 :root {
   /* ---- Color: canvas & surfaces ---- */
-  --color-canvas: #0F172A;    /* dark navy */
-  --color-surface: #1E293B;   /* navy panel */
-  --color-surface-2: #334155; /* slate panel */
+  --color-canvas: #141414;    /* near-black */
+  --color-surface: #1F1E1C;   /* warm black panel */
+  --color-surface-2: #2B2A27; /* warm charcoal panel */
 
   /* ---- Color: text ---- */
-  --color-ink: #ffffff;
-  --color-ink-muted: #94A3B8;  /* slate blue-grey */
+  --color-ink: #F2F0EB;        /* cream */
+  --color-ink-muted: #A39E94;  /* warm grey */
 
   /* ---- Color: brand ---- */
-  --color-primary: #ffffff;      /* white — buttons, badges, nav highlights */
-  --color-primary-ink: #0F172A;  /* dark navy text on white surfaces */
-  --color-accent: #7DD3FC;       /* baby blue */
+  --color-primary: #F2F0EB;      /* cream — buttons, badges, nav highlights */
+  --color-primary-ink: #141414;  /* near-black text on cream surfaces */
+  --color-accent: #FF4F1F;       /* orange-red */
   --color-success: #00c950;      /* green */
   --color-danger: #E11D48;       /* crimson red — pain points, errors, negative stats only */
 
   /* raw channels for alpha compositing (glows, tints) */
-  --primary-rgb: 255 255 255;
-  --accent-rgb: 125 211 252;
+  --primary-rgb: 242 240 235;
+  --accent-rgb: 255 79 31;
   --danger-rgb: 225 29 72;
   --success-rgb: 0 201 80;
 
   /* ---- Borders ---- */
-  --color-border: rgba(255, 255, 255, 0.12);
+  --color-border: rgba(242, 240, 235, 0.12);
 
-  /* ---- Glass surfaces (dark navy glass) ---- */
-  --color-glass: rgba(15, 23, 42, 0.85);
-  --color-glass-border: rgba(255, 255, 255, 0.18);
-  --color-glass-border-subtle: rgba(255, 255, 255, 0.06);
+  /* ---- Glass surfaces (warm black glass) ---- */
+  --color-glass: rgba(20, 20, 20, 0.85);
+  --color-glass-border: rgba(242, 240, 235, 0.18);
+  --color-glass-border-subtle: rgba(242, 240, 235, 0.06);
 
   /* ---- Radii ---- */
   --radius-sm: 8px;

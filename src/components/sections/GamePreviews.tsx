@@ -231,14 +231,14 @@ export function FruitSlicePreview() {
   return (
     <div className="relative h-full w-full overflow-hidden select-none" aria-hidden="true">
 
-      {/* ── Navy background with arcade grid + blue glow ── */}
-      <div className="absolute inset-0" style={{ background: '#0F172A' }} />
+      {/* ── Black background with arcade grid + orange glow ── */}
+      <div className="absolute inset-0" style={{ background: '#141414' }} />
       <div className="absolute inset-0" style={{
-        backgroundImage: 'linear-gradient(rgba(125,211,252,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(125,211,252,0.07) 1px, transparent 1px)',
+        backgroundImage: 'linear-gradient(rgba(255,79,31,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(255,79,31,0.07) 1px, transparent 1px)',
         backgroundSize: '48px 48px',
       }} />
       <div className="absolute inset-0" style={{
-        background: 'radial-gradient(ellipse at 50% 46%, rgba(125,211,252,0.13) 0%, transparent 62%)',
+        background: 'radial-gradient(ellipse at 50% 46%, rgba(255,79,31,0.13) 0%, transparent 62%)',
       }} />
 
       {/* ── Fruit items ── */}
@@ -440,17 +440,17 @@ export function CatchFriesPreview() {
   return (
     <div className="relative h-full w-full overflow-hidden select-none" aria-hidden="true">
 
-      {/* ── Navy background with stripes + blue glow ── */}
-      <div className="absolute inset-0" style={{ background: 'linear-gradient(160deg, #1E293B 0%, #0F172A 100%)' }}>
+      {/* ── Black background with stripes + orange glow ── */}
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(160deg, #1F1E1C 0%, #141414 100%)' }}>
         {/* Diagonal stripe texture */}
         <div className="absolute inset-0" style={{
-          backgroundImage: 'repeating-linear-gradient(-58deg, transparent, transparent 18px, rgba(125,211,252,0.04) 18px, rgba(125,211,252,0.04) 19px)',
+          backgroundImage: 'repeating-linear-gradient(-58deg, transparent, transparent 18px, rgba(255,79,31,0.04) 18px, rgba(255,79,31,0.04) 19px)',
         }} />
         {/* Central radial glow */}
         <div className="absolute" style={{
           top: '28%', left: '50%', transform: 'translate(-50%,-50%)',
           width: 180, height: 180, borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(125,211,252,0.15) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(255,79,31,0.15) 0%, transparent 70%)',
         }} />
       </div>
 
