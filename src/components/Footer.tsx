@@ -13,7 +13,6 @@ export function Footer() {
       links: [
         { label: t('links.how'), href: '#how' },
         { label: t('links.games'), href: '#games' },
-        { label: t('links.rewards'), href: '#rewards' },
         { label: t('links.dashboard'), href: '#dashboard' },
       ],
     },

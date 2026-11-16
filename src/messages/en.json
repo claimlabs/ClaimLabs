@@ -8,7 +8,6 @@
     "problem": "The Problem",
     "how": "How it works",
     "games": "The Games",
-    "rewards": "Rewards",
     "dashboard": "Dashboard",
     "bookDemo": "Book a demo",
     "menuLabel": "Open menu",
@@ -16,42 +15,23 @@
     "langLabel": "Language"
   },
   "hero": {
-    "titleLine1": "Play the game. Claim the reward.",
-    "titleLine2": "Come back for more.",
+    "titleLine1": "Games that bring",
+    "titleLine2": "customers back",
     "subhead": "Turn one-time diners into regulars with games they actually want to play.",
     "ctaPrimary": "Book a demo",
     "ctaSecondary": "See how it works",
-    "wheel": {
-      "streak": "Your streak",
-      "play1": "Mon", "play2": "Tue", "play3": "Wed",
-      "spinTheWheel": "Spin the wheel",
-      "scoreTarget": "Score {target} to unlock",
-      "silverLevel": "Silver level",
-      "ptsToGold": "200 pts to Gold",
-      "srInstructions": "Prize wheel — spin to win a reward",
-      "spin": "SPIN",
-      "spinning": "...",
-      "playToUnlock": "Play to unlock",
-      "chooseGame": "Choose a game to earn your spin",
-      "catchTheFries": "Catch the Fries",
-      "fruitySlice": "Fruit Slice",
-      "liveWin": "You won: {prize}",
-      "youEarnedSpin": "You earned a spin!",
-      "unlocking": "Unlocking wheel…",
-      "spinNow": "Tap SPIN to win your reward",
-      "youWon": "You won:",
-      "playAgain": "Play again",
-      "footnote": "This is the exact reward moment your customers feel — every time.",
-      "prizes": {
-        "off10": "10% Off",
-        "freeDrink": "Free Drink",
-        "off15": "15% Off",
-        "freeFries": "Free Fries",
-        "vipPoints": "VIP Points",
-        "freeDessert": "Free Dessert",
-        "buy1get1": "Buy 1 Get 1",
-        "off25": "25% Off"
-      }
+    "card": {
+      "label": "Your setup",
+      "forLabel": "For: your restaurant",
+      "games": "Branded games",
+      "gamesValue": "Your logo & menu",
+      "launch": "Go live",
+      "launchValue": "In 1 day",
+      "commitment": "Commitment",
+      "commitmentValue": "None",
+      "total": "Result",
+      "totalValue": "Diners who come back",
+      "stamp": "Live in 1 day"
     }
   },
   "problem": {
@@ -121,43 +101,6 @@
     },
     "playLabel": "Preview",
     "previewNote": "Illustrative preview — live games are custom-built and branded for your restaurant."
-  },
-  "rewards": {
-    "eyebrow": "Rewards & campaigns",
-    "title": "Everything you need to run the promo — and stay in control.",
-    "subtitle": "Leaderboards, codes, limited-time offers, and prize odds you dial in yourself. Marketing that behaves like a system, not a gamble.",
-    "leaderboard": {
-      "title": "Weekly & monthly leaderboards",
-      "body": "Competition brings players back on schedule. Reset weekly or monthly and reward your top regulars.",
-      "toggleWeekly": "Weekly",
-      "toggleMonthly": "Monthly",
-      "colRank": "Rank",
-      "colPlayer": "Player",
-      "colScore": "Score",
-      "players": ["Nour A.", "Omar K.", "Salma H.", "Youssef M.", "Mariam T."]
-    },
-    "coupon": {
-      "title": "Single-use coupon codes",
-      "body": "Every win generates a unique, single-use code — redeem in-store or online. No screenshots, no double-dipping.",
-      "generate": "Generate code",
-      "generating": "Generating…",
-      "copied": "Copied",
-      "hint": "Tap to generate a sample code"
-    },
-    "features": {
-      "lto": {
-        "title": "Limited-time offers",
-        "body": "Launch a weekend or holiday campaign in minutes. Set a start, an end, and let scarcity do the work."
-      },
-      "odds": {
-        "title": "Controlled prize odds",
-        "body": "Decide exactly how often each reward appears. Protect your margin while the game still feels generous."
-      },
-      "targeting": {
-        "title": "Campaigns on demand",
-        "body": "Spin up themed campaigns — new-item launches, slow-day boosts, win-back offers — whenever you need them."
-      }
-    }
   },
   "dashboard": {
     "eyebrow": "Analytics dashboard",
@@ -319,7 +262,6 @@
     "links": {
       "how": "How it works",
       "games": "The Games",
-      "rewards": "Rewards",
       "dashboard": "Dashboard",
       "about": "About",
       "contact": "Contact",
